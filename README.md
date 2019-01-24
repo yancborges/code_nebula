@@ -18,17 +18,16 @@ So i'm always trying to get better at those things.
 
 ### About python:
 Things that i want to learn this year:
-[ ] NoSQL
-[ ] RestFul architecture
-[ ] Jenkins
-[ ] Docker
-[ ] Spark
-[ ] Neural nets
-[ ] Advanced php
-[ ] Unit tests
+- [ ] RestFul architecture
+- [ ] Jenkins
+- [ ] Docker
+- [ ] Spark
+- [ ] Neural nets
+- [ ] Advanced php
+- [ ] Unit tests
 
 ### More info:
-Not all my projects are listed here. I have some bigger projects then those here
+Not all my projects are listed here. I have some bigger projects then these here
 that are currently being used for other people.
-Thay can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
+They can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
 
