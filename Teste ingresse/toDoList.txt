@@ -1,0 +1,21 @@
+- Banco de dados [OK]
+- Conexão código - banco [OK]
+- Criação das classes de objeto
+	usuário [OK]
+	token [OK]
+	sessão [OK]
+	item [OK]
+	requisição
+- CRUD via .json
+	usuário [CR]
+	token [CR]
+	sessão [CR]
+	item [CR]
+- Validação de token [OK]
+- Criação de token [OK]
+	Geração aleatória [OK]
+	Desativar antigos [OK]
+- Envio de .json remotamente (requisição)
+- Envio de .json remotamente (resposta)
+- Montagem do .json pra envio remoto (resposta)
+- Registro de requisições

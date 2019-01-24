@@ -1,0 +1,17 @@
+{
+	"Pimenta": [
+		{
+			"Tipo": "Calabresa",
+			"Origem": "Tocantins",
+			"Preço": 10.60
+		}
+	],
+    "Banana": [
+        {
+            "Tipo": "Nanica",
+            "Origem": "Paraná",
+            "Preço": 3.40,
+            "Quantidade": 8
+        }
+    ]
+}

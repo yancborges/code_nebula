@@ -1,0 +1,11 @@
+Encoding
+
+Step 1: Put the text in "Source.txt" file
+Step 2: Run "hideIt.py" (requires python 3.4)
+Step 3: Type "hideText" in the prompt then input the key (u should know it phew)
+Step 4: Get the ciphered text in "Result.txt"
+
+Reverse for decoding (cmd = "showText")
+
+WARNING: The "Result.txt" must be empty before running the code,
+or it will mix two texts in the same file.

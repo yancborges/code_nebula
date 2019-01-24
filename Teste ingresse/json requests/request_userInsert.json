@@ -1,0 +1,21 @@
+{
+    "credentials": [
+        {
+            "user": "Yan",
+            "id": 1,
+            "token": "5aGy3JqTDT"
+        }
+    ],
+    "request": [
+        {
+            "sog": "insert",
+            "item": "user",
+            "info": [ 
+                {
+                    "name": "Jimmy Page",
+                    "password": "safepassword"
+                }
+            ]
+        }
+    ]
+}
