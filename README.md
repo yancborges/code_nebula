@@ -18,6 +18,7 @@ So i'm always trying to get better at those things.
 
 ### About python:
 Things that i want to learn this year:
+- [ ] Pandas [curretly studying]
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
