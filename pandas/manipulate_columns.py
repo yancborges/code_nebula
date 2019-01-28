@@ -1,5 +1,7 @@
 import pandas as pd 
 
+### Rename
+
 ufo = pd.read_csv('http://bit.ly/uforeports')
 
 ufo.columns
@@ -16,4 +18,13 @@ ufo.columns = ufo_cols
 ufo = pd.read_csv('http://bit.ly/uforeports', names=ufo_cols, header=0)
 # Reads the file with that list as header name
 # header = 0: The file does contain a row with header name. This argument ignores it
+
+### Removing
+
+ufo.drop('Colors Reported', axis=1, inplace=True)
+# Removes that column
+
+ufo.drop([0,1], axis=0, inplace=True)
+# Drops the first two rows
+
 
