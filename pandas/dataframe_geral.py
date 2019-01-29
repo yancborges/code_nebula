@@ -23,3 +23,9 @@ is_long = movies.duration >= 200
 movies[movies.duration >= 200]
 # Does all the code above, but in one line of code
 
+### Multiple filters
+
+movies[(movies.duration >= 200) & (movies.genre == 'Drama')]
+# Multiple filters requires () for each condition.
+# also Or and And statements does not work here. Switch for & and |
+
