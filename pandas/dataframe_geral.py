@@ -2,7 +2,7 @@ import pandas as pd
 
 movies = pd.read_csv('http://bit.ly/imdbratings')
 
-### Filtering
+### Filtering ###
 
 bools = []
 for mins in movies.duration
@@ -28,4 +28,39 @@ movies[movies.duration >= 200]
 movies[(movies.duration >= 200) & (movies.genre == 'Drama')]
 # Multiple filters requires () for each condition.
 # also Or and And statements does not work here. Switch for & and |
+
+### Tips ###
+
+ufo = pd.read_csv('http://bit.ly/uforeports', usecols=[0,4])
+# Reading only columns with index < 5
+
+### Axis ###
+
+drinks = pd.read_csv('http://bit.ly/drinksbycountry')
+
+drinks.drop('continent', axis=1)
+# Dropping the 'continent' column
+
+drinks.drop(2,axis=0)
+# Dropping the 2 index of dataframe rows
+
+## axis = 1 - Column
+## axis = 0 - Row
+
+drinks.mean()
+# Shows the meadium value for each series in the dataframe
+# default: axis=0 (index), axis = 1 (columns)
+
+### String methods ###
+
+orders = pd.read_table('http://bit.ly/chiporders')
+
+orders.item_name.str.upper()
+# Upper case item_name column values
+
+orders.item_name.str.contains('Chiken')
+# Returns a boolean list with based if there are the given argument in item_name column
+
+
+
 
