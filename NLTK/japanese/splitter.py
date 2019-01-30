@@ -1,14 +1,14 @@
 import japanese_splitter
+import writter
 
-def hey(text, target):
-	if(target == None):
-		target = 'output.txt'
-	with open(target ,'w', encoding='utf8') as f:
-		f.write(str(text))
-	print('written to output.txt file')
+text = '私は子供です。だから、お菓子を食べてが好き！'
+text = 'この機械きかいは体重たいじゅう計けいのような形かたちです。この上うえに乗のって手てでグリップを握にぎると、足あしの裏うらや手てのひらから体からだに弱よわい電気でんきが流ながれます。そして、体からだの筋肉きんにくの量りょうを調しらべることができます。転ころびやすいかどうかなど体からだのバランスもわかります。'
+#text = '123456789。123456789。123456789。123456789。123456789。123456789。123456789。123456789。123456789。'
 
-hey(japanese_splitter.jTokenize("私は子供です。だから、お菓子を食べてが好き！"))
-#hey("。、！？」「", 'punct.txt')
+x = japanese_splitter.jTokenize(text)
+writter.hey(x,'output.txt','w',False)
+
+
 
 
 
