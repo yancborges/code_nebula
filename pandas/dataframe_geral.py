@@ -61,6 +61,49 @@ orders.item_name.str.upper()
 orders.item_name.str.contains('Chiken')
 # Returns a boolean list with based if there are the given argument in item_name column
 
+### Converting ###
+
+drinks['beer_servings'] = drinks.beer_servings.astype(float)
+# Converts column values to float
+
+drinks = pd.read_csv('http://bit.ly/drinksbycountry', dtype={'beer_servings':float})
+# Converting data type while its readed
+
+### Group by ###
+
+drinks.groupby('continent').beer_servings.mean()
+# Appends all values from the same continent and calculates the mean value
+
+drinks.groupby('continent').beer_servings.max()
+# Shows the maximum value for each continent
+
+drinks.groupby('continent').beer_servings.agg(['count','min','max','mean'])
+# Appends all those commands and get values filtering by its continent
+
+drinks.groupby('continent').mean()
+# Returns the mean value for each column
+
+%matplotlib inline
+drinks.groupby('continent').mean().plot(kind='bar')
+# Display graphics
+
+### Exploring ###
+
+movies.genre.value_counts()
+# Returns the count of each value in the column
+
+movies.genre.value_counts(normalize=True)
+# % of occurance
+
+movies.genre.unique()
+# Return all unique values
+
+
+
+
+
+
+
 
 
 
