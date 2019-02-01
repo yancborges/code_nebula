@@ -44,26 +44,33 @@ def jTokenize(text):
 		# is appended to it, until the word ends
 		count = 0
 		stopped = 0
+		safe = 0
+
 		while(count < len(sent)):
+			print(stopped,safe,count)
 			char_string += sent[count]
 			if(check_word(char_string, list(dictData.Word))):
-				sent_tokenized.append(char_string)
-				char_string = ''
+				safe = count
+				if(len(char_string) == 1):
+					stopped = count
 			else:
 				if(len(char_string) == 1):
-					stopped = count+1
+					stopped = count
+				if(len(sent[stopped:safe]) > 0):
+					sent_tokenized.append(sent[stopped:safe+1])
+					char_string = ''
+					count = safe+1
 			count += 1
 			if(count >= len(sent)):
-				count = stopped
+				count = stopped+1
 				char_string = ''
-			#print(count)
-		'''		
-		for char in sent:
-			char_string += char
-			if(check_word(char_string, list(dictData.Word))):
-				sent_tokenized.append(char_string)
-				char_string = ''
-		'''
+
+
+
+
+
+
+
 		main_response.append(sent_tokenized)
 
 	return main_response
