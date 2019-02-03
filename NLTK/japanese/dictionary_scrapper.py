@@ -17,16 +17,15 @@ class level:
 # Info about words within the levels
 class word:
 
-	def __init__(self,text,function,level_name,ph_freq,common,relevancy):
+	def __init__(self,text,function,level_name,ph_freq,common):
 		self.text = text
 		self.function = function
 		self.level_name = level_name
 		self.ph_freq = ph_freq
 		self.common = common
-		self.relevancy = relevancy
 
 	def toString(self):
-		return self.text + ',' + self.function + ',' + self.level_name + ',' + self.ph_freq + ',' + self.common + ',' + self.relevancy
+		return self.text + ',' + self.function + ',' + self.level_name + ',' + self.ph_freq + ',' + str(self.common)
 
 # Main function
 # Scraps the words from Jisho.org lists.
@@ -77,28 +76,33 @@ def create_dictionary():
 			s_func = dirty_list.find('<div class="meaning-tags">', last_block)+26
 			function = dirty_list[s_func:dirty_list.find('</div>', s_func)].lower()
 
-			#
-			# Remeaning info: [ph_freq,common,relevancy]
-			#
-
 			# Level_name
 			s_name = dirty_list.find('<span class="concept_light-tag label">JLPT', last_block)+42
 			level_name = 'jlpt-' + dirty_list[s_name:dirty_list.find('</span>', s_name)].lower()
 
-			# frequency
+			# frequency (not working)
+			'''
+			word_url = 'https://tatoeba.org/por/sentences/search?query=%3D' + text + '&from=jpn&to=und'
+			word_html = urllib.request.urlopen(word_url).read().decode("utf-8")
+			freq = word_html[word_html.find('</h2>'):].find('</span>')[:word_html.find('&nbsp')]
+			print(freq)
+			'''
 			freq = ''
 
-			# Common?
-			common = ''
+			end = dirty_list.find('<a class="concept_light-status_link"', last_block)
 
-			# Relevancy
-			relevancy = ''	
+			# Common?
+			c_index = dirty_list.find('<span class="concept_light-tag concept_light-common success label">Common word</span>', last_block)
+			if(c_index > end or c_index < 0):
+				common = False
+			else:
+				common = True
 
 			# Setting the checkpoint (for not getting the same data twice)
 			last_block = dirty_list.find('</span>', dirty_list.find('<span class="text">', last_block))+20
 
 			# Creating object
-			word_obj = word(text,function,level_name,freq,common,relevancy)
+			word_obj = word(text,function,level_name,freq,common)
 
 			writter.hey(word_obj.toString(),'new_dict_test.txt','a',True,False)
 			words.append(word_obj)
