@@ -3,4 +3,4 @@ def hey(text, target, option, nrow):
 		f.write(str(text))
 		if(nrow == True):
 			f.write('\n')
-	print('written to output.txt file')
+	print('written to '+ target + ' file')

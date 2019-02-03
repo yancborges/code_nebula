@@ -59,7 +59,7 @@ def jTokenize(text):
 				if(len(sent[stopped:safe]) > 0):
 					sent_tokenized.append(sent[stopped:safe+1])
 					char_string = ''
-					count = safe+1
+					count = safe
 			count += 1
 			if(count >= len(sent)):
 				count = stopped+1
