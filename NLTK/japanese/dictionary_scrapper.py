@@ -24,6 +24,9 @@ class word:
 		self.ph_freq = ph_freq
 		self.common = common
 
+	def toString(self):
+		return self.text + ',' + self.function + ',' + self.level_name + ',' + self.ph_freq + ',' + self.common
+
 # Main function
 # Scraps the words from Jisho.org lists.
 # When finishig the words of the first page, it goes to the second until the count ends,
@@ -39,6 +42,10 @@ def create_dictionary():
 
 	words_list = []
 	words = []
+	total_count = levels[0].count + levels[1].count + levels[2].count + levels[3].count + levels[4].count
+	perc = 0
+
+	#writter.hey('word,function,level,frequency,common','jishoDict.txt','w',True)
 	
 	l_count = 0
 	page_count = 1
@@ -55,9 +62,6 @@ def create_dictionary():
 		levels[l_count].count = total
 
 		print('Level total words: - ' + total)
-		print('')
-
-		print('Getting words...')
 
 		last_block = 0
 
@@ -70,15 +74,34 @@ def create_dictionary():
 			if(text.endswith(' ')):
 				text = text.split(' ')[0]
 			
-			writter.hey(text,'new_dict_test.txt','a',True)
-			words.append(text)
-			print('%s of %s words.' %(len(words), levels[l_count].count))
+			# Taking function
+			s_func = dirty_list.find('<div class="meaning-tags">', last_block)+26
+			function = dirty_list[s_func:dirty_list.find('</div>', s_func)]
 
-			# Remeaning info: [function,level_name,ph_freq,common]
+			#
+			# Remeaning info: [level_name,ph_freq,common]
+			#
+
+			# Level_name
+			level_name = ''
+
+			# frequency
+			freq = ''
+
+			# Common?
+			common = ''			
 
 			# Setting the checkpoint (for not getting the same data twice)
 			last_block = dirty_list.find('</span>', dirty_list.find('<span class="text">', last_block))+20
 
+			# Creating object
+			word_obj = word(text,function,level_name,freq,common)
+
+			writter.hey(word_obj.toString(),'new_dict_test.txt','a',True,False)
+			words.append(word_obj)
+			
+			# Number of words
+			#print('%s of %s words.' %(len(words), levels[l_count].count))
 
 		# If there are no more results in this page, go to the next one
 		if(len(words) < int(levels[l_count].count)):
@@ -89,7 +112,7 @@ def create_dictionary():
 			l_count += 1
 			page_count = 1
 			words_list.append(words)
-			word = []
+			words = []
 
 
 create_dictionary()

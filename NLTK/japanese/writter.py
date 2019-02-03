@@ -1,6 +1,7 @@
-def hey(text, target, option, nrow):
+def hey(text, target, option, nrow,msg):
 	with open(target ,option, encoding='utf8') as f:
 		f.write(str(text))
 		if(nrow == True):
 			f.write('\n')
-	print('written to '+ target + ' file')
+	if(msg == True):
+		print('written to '+ target + ' file')
