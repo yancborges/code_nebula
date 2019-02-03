@@ -17,15 +17,16 @@ class level:
 # Info about words within the levels
 class word:
 
-	def __init__(self,text,function,level_name,ph_freq,common):
+	def __init__(self,text,function,level_name,ph_freq,common,relevancy):
 		self.text = text
 		self.function = function
 		self.level_name = level_name
 		self.ph_freq = ph_freq
 		self.common = common
+		self.relevancy = relevancy
 
 	def toString(self):
-		return self.text + ',' + self.function + ',' + self.level_name + ',' + self.ph_freq + ',' + self.common
+		return self.text + ',' + self.function + ',' + self.level_name + ',' + self.ph_freq + ',' + self.common + ',' + self.relevancy
 
 # Main function
 # Scraps the words from Jisho.org lists.
@@ -61,8 +62,6 @@ def create_dictionary():
 
 		levels[l_count].count = total
 
-		print('Level total words: - ' + total)
-
 		last_block = 0
 
 		while(dirty_list.find('<span class="text">', last_block) > 0):
@@ -76,26 +75,30 @@ def create_dictionary():
 			
 			# Taking function
 			s_func = dirty_list.find('<div class="meaning-tags">', last_block)+26
-			function = dirty_list[s_func:dirty_list.find('</div>', s_func)]
+			function = dirty_list[s_func:dirty_list.find('</div>', s_func)].lower()
 
 			#
-			# Remeaning info: [level_name,ph_freq,common]
+			# Remeaning info: [ph_freq,common,relevancy]
 			#
 
 			# Level_name
-			level_name = ''
+			s_name = dirty_list.find('<span class="concept_light-tag label">JLPT', last_block)+42
+			level_name = 'jlpt-' + dirty_list[s_name:dirty_list.find('</span>', s_name)].lower()
 
 			# frequency
 			freq = ''
 
 			# Common?
-			common = ''			
+			common = ''
+
+			# Relevancy
+			relevancy = ''	
 
 			# Setting the checkpoint (for not getting the same data twice)
 			last_block = dirty_list.find('</span>', dirty_list.find('<span class="text">', last_block))+20
 
 			# Creating object
-			word_obj = word(text,function,level_name,freq,common)
+			word_obj = word(text,function,level_name,freq,common,relevancy)
 
 			writter.hey(word_obj.toString(),'new_dict_test.txt','a',True,False)
 			words.append(word_obj)
