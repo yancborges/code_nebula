@@ -81,10 +81,12 @@ def create_dictionary():
 			level_name = 'jlpt-' + dirty_list[s_name:dirty_list.find('</span>', s_name)].lower()
 
 			# frequency (not working)
+			
 			'''
-			word_url = 'https://tatoeba.org/por/sentences/search?query=%3D' + text + '&from=jpn&to=und'
+			word_url = 'https://tatoeba.org/por/sentences/search?query=%3D' + str(text.encode('utf-8')) + '&from=jpn&to=und'
 			word_html = urllib.request.urlopen(word_url).read().decode("utf-8")
-			freq = word_html[word_html.find('</h2>'):].find('</span>')[:word_html.find('&nbsp')]
+			print(word_url)
+			freq = word_html[word_html[word_html.find('</h2>'):].find('</span>'):][:word_html.find('&nbsp')]
 			print(freq)
 			'''
 			freq = ''

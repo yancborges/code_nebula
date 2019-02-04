@@ -1,1 +1,6 @@
-﻿
+﻿ 学校,noun,jlpt- n5,,True
+ 川,noun,jlpt- n5,,True
+ 手,noun,jlpt- n5,,True
+ 戸,noun,jlpt- n5,,True
+ 学校,noun,jlpt- n5,,True
+ 川,noun,jlpt- n5,,True
