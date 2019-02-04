@@ -1,4 +1,4 @@
-def hey(text, target, option, nrow,msg):
+def hey(text, target, option, nrow, msg):
 	with open(target ,option, encoding='utf8') as f:
 		f.write(str(text))
 		if(nrow == True):

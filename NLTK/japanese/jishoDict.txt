@@ -1,0 +1,1201 @@
+word,function,level,frequency,common
+ 学校
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 川
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 手
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 戸
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 眼鏡
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 煙草
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 赤
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 仕事
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 英語
+      
+
+    
+
+,noun, suru verb, no-adjective,jlpt- n5,,True
+ 問題
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 部屋
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 子供
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 時間
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 雨
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 先生
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 年
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 手紙
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 電話
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 水
+      
+
+    
+
+,noun, suru verb, no-adjective,jlpt- n5,,True
+ 病気
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 会社
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 上げる
+      
+
+    
+
+      <div class="concept_,noun,jlpt- n5,,True
+ 結婚
+      
+
+    
+
+,ichidan verb, transitive verb,jlpt- n5,,True
+ 言葉
+      
+
+    
+
+,noun, no-adjective, suru verb,jlpt- n5,,True
+ 目
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 走る
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 名前
+      
+
+    
+
+,godan verb with ru ending, intransitive verb,jlpt- n5,,True
+ 旅行
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 道
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 飛行機
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 映画
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 音楽
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 木
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 大学
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 時計
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 家族
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 花
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 猫
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 毎日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 宿題
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 雪
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 山
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 窓
+      
+
+    
+
+,noun, counter,jlpt- n5,,True
+ 動物
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 夜
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 料理
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 夏
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 新聞
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 公園
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 意味
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 自転車
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 足
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 電車
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 散歩
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 声
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 朝
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 歌
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 靴
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 箱
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 机
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 帽子
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 海
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 授業
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 銀行
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 写真
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 冬
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 村
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 傘
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 口
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 橋
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 病院
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 春
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 図書館
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 買い物
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 椅子
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 自動車
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 色
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 卵
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 肉
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 風邪
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 掃除
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 紙
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 鍵
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 雑誌
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 切符
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 外国人
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 財布
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 鉛筆
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 大人
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 塩
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 砂糖
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 夏休み
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 郵便局
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 池
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 教室
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 耳
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 台所
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 切手
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 電気
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 歯
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 歯
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 紅茶
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 家庭
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 野菜
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 風呂
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 玄関
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 地下鉄
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 鼻
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 緑
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 昼
+      
+
+    
+
+,no-adjective, noun,jlpt- n5,,True
+ 西
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 白
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 洗濯
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 冷蔵庫
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 火曜日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 南
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 北
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 茶色
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 喫茶店
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 黒
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 青
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 靴下
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 封筒
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 辺
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 黄色
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 映画館
+      
+
+    
+
+,na-adjective, noun,jlpt- n5,,True
+ 箸
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 食堂
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 牛肉
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 交差点
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 漢字
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 茶碗
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 曇り
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 背広
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 万年筆
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 灰皿
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 大使館
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 交番
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 豚肉
+      
+
+    
+
+,noun, suru verb,jlpt- n5,,True
+ 飲む
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 頭
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 日曜日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 誕生日
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 可愛い
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 鞄
+      
+
+    
+
+,i-adjective,jlpt- n5,,True
+ 土曜日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 月曜日
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 金曜日
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 花瓶
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 木曜日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 本棚
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 石鹸
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 水曜日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 飴
+      
+
+    
+
+,adverbial noun, temporal noun,jlpt- n5,,True
+ 八百屋
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 成る
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ より
+      
+
+    
+
+      <div class="concept_,godan verb with ru ending, intransitive verb,jlpt- n5,,True
+ 一番
+      
+
+    
+
+,particle,jlpt- n5,,True
+ 私
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 外
+      
+
+    
+
+,pronoun,jlpt- n5,,True
+ 姉
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 百
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 有る
+      
+
+    
+
+      <div cl,numeric,jlpt- n5,,True
+ 其の
+      
+
+    
+
+      <div cl,godan verb with ru ending (irregular verb), intransitive verb,jlpt- n5,,True
+ 言う
+      
+
+    
+
+      <div cl,pre-noun adjectival,jlpt- n5,,True
+ 出来る
+      
+
+    
+
+      <div cl,godan verb with u ending,jlpt- n5,,True
+ 良い
+      
+
+    
+
+      <div cl,ichidan verb, intransitive verb,jlpt- n5,,True
+ 下さい
+      
+
+    
+
+      <div class="concept_,i-adjective,jlpt- n5,,True
+ 見る
+      
+
+    
+
+      <div cl,expression,jlpt- n5,,True
+ 此の
+      
+
+    
+
+      <div cl,ichidan verb, transitive verb,jlpt- n5,,True
+ 自分
+      
+
+    
+
+,pre-noun adjectival,jlpt- n5,,True
+ 知る
+      
+
+    
+
+      <div cl,pronoun,jlpt- n5,,True
+ 持つ
+      
+
+    
+
+      <div cl,godan verb with ru ending, transitive verb,jlpt- n5,,True
+ 何
+      
+
+    
+
+,godan verb with tsu ending,jlpt- n5,,True
+ 車
+      
+
+    
+
+,pronoun,jlpt- n5,,True
+ 話す
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 今
+      
+
+    
+
+,godan verb with su ending, transitive verb,jlpt- n5,,True
+ 今日
+      
+
+    
+
+,adverbial noun, noun,jlpt- n5,,True
+ 買う
+      
+
+    
+
+      <div cl,temporal noun,jlpt- n5,,True
+ 読む
+      
+
+    
+
+      <div cl,godan verb with u ending, transitive verb,jlpt- n5,,True
+ 皆
+      
+
+    
+
+,adverb, noun,jlpt- n5,,True
+ 新しい
+      
+
+    
+
+      <div class="concept_,adverb, noun,jlpt- n5,,True
+ 話
+      
+
+    
+
+,i-adjective,jlpt- n5,,True
+ 明日
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 昨日
+      
+
+    
+
+,temporal noun,jlpt- n5,,True
+ 出る
+      
+
+    
+
+      <div cl,adverbial noun, temporal noun,jlpt- n5,,True
+ 勉強
+      
+
+    
+
+,ichidan verb, intransitive verb,jlpt- n5,,True
+ 取る
+      
+
+    
+
+      <div cl,noun, suru verb,jlpt- n5,,True
+ 誰
+      
+
+    
+
+,godan verb with ru ending, transitive verb,jlpt- n5,,True
+ お金
+      
+
+    
+
+      <div cl,pronoun,jlpt- n5,,True
+ 男
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 犬
+      
+
+    
+
+,noun, noun - used as a prefix,jlpt- n5,,True
+ 使う
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True
+ 大変
+      
+
+    
+
+,godan verb with u ending, transitive verb,jlpt- n5,,True
+ 待つ
+      
+
+    
+
+      <div cl,adverb,jlpt- n5,,True
+ 作る
+      
+
+    
+
+      <div cl,godan verb with tsu ending, transitive verb, intransitive verb,jlpt- n5,,True
+ 後ろ
+      
+
+    
+
+      <div cl,godan verb with ru ending, transitive verb,jlpt- n5,,True
+ 町
+      
+
+    
+
+,noun, no-adjective,jlpt- n5,,True
+ 駅
+      
+
+    
+
+,noun,jlpt- n5,,True
+ 少し
+      
+
+    
+
+      <div cl,noun,jlpt- n5,,True

@@ -45,7 +45,7 @@ def create_dictionary():
 	total_count = levels[0].count + levels[1].count + levels[2].count + levels[3].count + levels[4].count
 	perc = 0
 
-	#writter.hey('word,function,level,frequency,common','jishoDict.txt','w',True)
+	writter.hey('word,function,level,frequency,common','jishoDict.txt','w',True,False)
 	
 	l_count = 0
 	page_count = 1
@@ -68,9 +68,9 @@ def create_dictionary():
 			
 			# Taking the word
 			text = dirty_list[last_block:].split('<span class="text">')[1][8:]
-			text = text[:text.find('</span>')-7]
-			if(text.endswith(' ')):
-				text = text.split(' ')[0]
+			e_text = text.find('</div>')
+			text = text.replace('</span>','').replace('<span>','').replace('</div>','').replace(r'(\s*)','').replace(r'(\n*)','')
+			text = text[:e_text]
 			
 			# Taking function
 			s_func = dirty_list.find('<div class="meaning-tags">', last_block)+26
@@ -81,6 +81,15 @@ def create_dictionary():
 			level_name = 'jlpt-' + dirty_list[s_name:dirty_list.find('</span>', s_name)].lower()
 
 			# frequency (not working)
+
+			#
+			# This is the hardest part of this code
+			# I have to imagine a way to make this happen
+			# Maybe i make my own data for sentences and them take the frequency from there
+			# And also i can feed it daily, like a little machine learning system
+			# But it will take lots and lots of time
+			# I will keep wihtout the frequency for now
+			#
 			
 			'''
 			word_url = 'https://tatoeba.org/por/sentences/search?query=%3D' + str(text.encode('utf-8')) + '&from=jpn&to=und'
@@ -106,7 +115,8 @@ def create_dictionary():
 			# Creating object
 			word_obj = word(text,function,level_name,freq,common)
 
-			writter.hey(word_obj.toString(),'new_dict_test.txt','a',True,False)
+			#writter.hey(word_obj.toString(),'new_dict_test.txt','a',True,False)
+			writter.hey(word_obj.toString(),'jishoDict.txt','a',True,False)
 			words.append(word_obj)
 			
 			# Number of words
