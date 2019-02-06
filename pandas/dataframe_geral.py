@@ -98,6 +98,42 @@ movies.genre.value_counts(normalize=True)
 movies.genre.unique()
 # Return all unique values
 
+### Missing values
+
+ufo.isnull()
+# Show for each value of each column if that value is missing or not (boolean)
+
+ufo.notnull()
+# Inverse of above
+
+ufo.isnull().sum()
+# Makes te sum of each PRESENT value, excluding Null values (in this case only 0 and 1 are summed)
+
+ufo[ufo.City.isnull()].sum()
+# Creates a series of trues and falses. Then pass it to the dataframe.
+# So pandas appends both and show ONLY the rows where this city column is missing
+
+ufo.dropna(how='any').shape
+# Dropping all rows with any missing value
+
+ufo.dropna(subset=['City','Shape Reported'], how='any')
+# Dropping each row where City or Shape Reported columns are missing
+
+ufo['Shape Reported'].value_counts(dropna=False)
+# For default, pandas hides the missing values here
+# This argument prevents that, so you can see how many are missing
+
+ufo['Shape Reported'].fillna(value='VARIOUS', inplace=True)
+# Replaces all the missing values for this column with the gathered one
+
+
+
+
+
+
+
+
+
 
 
 
