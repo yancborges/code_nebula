@@ -126,6 +126,33 @@ ufo['Shape Reported'].value_counts(dropna=False)
 ufo['Shape Reported'].fillna(value='VARIOUS', inplace=True)
 # Replaces all the missing values for this column with the gathered one
 
+### INDEX ###
+
+drinks.index
+# Returns the indexes for that dataframe
+
+drinks[drinks.continent=='South America']
+# Shows all rows which the continent is 'South America'
+
+drinks.loc[23,'beer_servings']
+drinks.loc['Brazil','beer_servings'] # (only works after the command below)
+# Returns the value from a cell matching row and column
+
+drinks.set_index('country')
+# Replaces indexes by row's country value
+
+drinks.reset_index()
+# Undo the command above
+
+people = pd.Series([3000000, 850000], index=['Albania','Andorra'], names='population')
+drinks.beer_servings * people
+# Mutiplies both values. As we created a new series with only 2 itens,
+# pandas will find those values in dataframe and make he math
+
+pd.concat([drinks, people], axis=1)
+# Concatenates a series to a dataframe
+
+
 
 
 
