@@ -1,1 +1,8 @@
 name,strokes,frequency,grade,jlpt
+私,7,242,grade 6,N4
+子,3,72,grade 1,N5
+供,8,313,grade 6,N3
+菓,11,1719,junior high,N2
+子,3,72,grade 1,N5
+食,9,328,grade 2,N5
+好,6,423,grade 4,N3

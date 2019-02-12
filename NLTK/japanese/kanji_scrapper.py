@@ -1,6 +1,8 @@
 import urllib.request
 import pandas as pd
 import writter
+import url_handler
+from urllib.parse import quote_from_bytes, quote
 
 class kanji:
 
@@ -19,21 +21,22 @@ class kanji:
 		return self.name + ',' + str(self.strokes) + ',' + str(self.frequency) + ',' + self.grade + ',' + self.jlpt
 
 	def scrap(self):
-		url = 'https://jisho.org/search/%23kanji%20' + self.name
-		resp = urllib.request.urlopen(url).read().decode("utf-8")
-		writter.hey(resp,'htmltest.html','w',False,True)
-		self.strokes = resp.split('<div class="kanji-details__stroke_count">')[0].split('<strong>')[1].split('</strong>')[0]
+		url = 'https://jisho.org/search/%23kanji%20'
+		#resp = urllib.request.urlopen(url).read().decode("utf-8")
+		resp = urllib.request.urlopen(url + quote_from_bytes(self.name.encode('utf-8'))).read().decode("utf-8")
+		#writter.hey(resp,'htmltest.html','w',False,True)
+		self.strokes = resp.split('<div class="kanji-details__stroke_count">')[1].split('<strong>')[1].split('</strong>')[0]
+		self.frequency = resp.split('<div class="frequency">')[1].split('<strong>')[1].split('</strong>')[0]
+		self.grade = resp.split('<div class="grade">')[1].split('<strong>')[1].split('</strong>')[0]
+		self.jlpt = resp.split('<div class="jlpt">')[1].split('<strong>')[1].split('</strong>')[0]
+		writter.hey(self.toString(),'kanji_dict.txt','a',True,False)
 		
-
-
-
 def create():
 	try:
 		with open('kanji_dict.txt', 'r') as f:
 			size = len(f.read())
 	except:
-		with open('kanji_dict.txt', 'w') as f:
-			f.write('name,strokes,frequency,grade,jlpt')
+		writter.hey('name,strokes,frequency,grade,jlpt','kanji_dict.txt','w',True,False)
 
 
 def load():

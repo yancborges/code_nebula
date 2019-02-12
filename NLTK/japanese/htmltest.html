@@ -4,7 +4,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"422ee85b58","applicationID":"219570","transactionName":"dwkKQRENWV9SERxGB1UUB11MC1tXUhs=","queueTime":0,"applicationTime":42,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"422ee85b58","applicationID":"219570","transactionName":"dwkKQRENWV9SERxGB1UUB11MC1tXUhs=","queueTime":0,"applicationTime":50,"agent":""}</script>
 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
     <meta name="apple-mobile-web-app-title" content="Jisho">
     <meta name="theme-color" content="#47DB27">
@@ -38,7 +38,7 @@
 
     <link rel="stylesheet" media="screen" href="https://assets.jisho.org/assets/application-2d26ebf11b7af6a3b98a02d73cbbed47a670985f49ac3a4e4ec6f282ab909cea.css" />
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="4OXaaHlMwkddIPYqL5pcgKM8kcHT/bb1oX2bqOVrOjkNfcpJgNBDmxnWHrnpp29KLudZaLLSidVlGyz9s++szg==" />
+<meta name="csrf-token" content="Zp8tBvaqtRber/hhms3uTbOHa7byEZQD7rupfRKrZUsS0lggF2o+yZ7N3b7ZAq4EW6u4ljrPJa2rwhJbaZNNIg==" />
     
       <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,8 +52,12 @@
 </script>
 
     <link rel="shortcut icon" type="image/x-icon" href="https://assets.jisho.org/assets/favicon-062c4a0240e1e6d72c38aa524742c2d558ee6234497d91dd6b75a182ea823d65.ico" />
-    <title>#kanji b&#39;\xe7\xa7\x81&#39; - Jisho.org</title>
-    <meta name="Description" content="Japanese dictionary search results for #kanji b&#39;\xe7\xa7\x81&#39;.">
+    <title>#kanji 私 - Jisho.org</title>
+    <meta name="Description" content="Japanese dictionary search results for #kanji 私.">
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@jisho" />
+      <meta name="twitter:title" content="Japanese kanji search for &quot;#kanji 私&quot;" />
+      <meta name="twitter:description" content="1 kanji found. See the full details ..." />
     <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
     <script>
       var googletag = googletag || {};
@@ -144,7 +148,7 @@
             class="keyword japanese_gothic"
             name="keyword"
             id="keyword"
-            value="#kanji b&#39;\xe7\xa7\x81&#39;"
+            value="#kanji 私"
             tabindex="1"
             lang="ja"
             autocapitalize="off"
@@ -537,19 +541,19 @@
         <div id="advanced_area" class="hidden area advanced">
   <div class="filters">
   <ul class="button-group radius" data-filter-group="type">
-    <li><a accesskey="a" class=" filter small button" data-filter="type-all" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">All</a></li>
-    <li><a accesskey="w" class=" filter small button" data-filter="words" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">Words</a></li>
-    <li><a accesskey="k" class=" filter small button active" data-filter="kanji" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">Kanji</a></li>
-    <li><a accesskey="s" class=" filter small button" data-filter="sentences" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">Sentences</a></li>
-    <li><a accesskey="n" class=" filter small button" data-filter="names" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">Names</a></li>
+    <li><a accesskey="a" class=" filter small button" data-filter="type-all" href="//jisho.org/search/%E7%A7%81%20%23kanji">All</a></li>
+    <li><a accesskey="w" class=" filter small button" data-filter="words" href="//jisho.org/search/%E7%A7%81%20%23kanji">Words</a></li>
+    <li><a accesskey="k" class=" filter small button active" data-filter="kanji" href="//jisho.org/search/%E7%A7%81%20%23kanji">Kanji</a></li>
+    <li><a accesskey="s" class=" filter small button" data-filter="sentences" href="//jisho.org/search/%E7%A7%81%20%23kanji">Sentences</a></li>
+    <li><a accesskey="n" class=" filter small button" data-filter="names" href="//jisho.org/search/%E7%A7%81%20%23kanji">Names</a></li>
   </ul>
     <ul class="button-group radius" data-filter-group="level">
-      <li><a class=" filter small button" data-filter="level-all" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">All</a></li>
-      <li><a class=" filter small button" data-filter="jlpt-n1" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">JLPT N1</a></li>
-      <li><a class=" filter small button" data-filter="jlpt-n2" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">JLPT N2</a></li>
-      <li><a class=" filter small button" data-filter="jlpt-n3" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">JLPT N3</a></li>
-      <li><a class=" filter small button" data-filter="jlpt-n4" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">JLPT N4</a></li>
-      <li><a class=" filter small button" data-filter="jlpt-n5" href="//jisho.org/search/b&#39;%5Cxe7%5Cxa7%5Cx81&#39;%20%23kanji">JLPT N5</a></li>
+      <li><a class=" filter small button" data-filter="level-all" href="//jisho.org/search/%E7%A7%81%20%23kanji">All</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n1" href="//jisho.org/search/%E7%A7%81%20%23kanji">JLPT N1</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n2" href="//jisho.org/search/%E7%A7%81%20%23kanji">JLPT N2</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n3" href="//jisho.org/search/%E7%A7%81%20%23kanji">JLPT N3</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n4" href="//jisho.org/search/%E7%A7%81%20%23kanji">JLPT N4</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n5" href="//jisho.org/search/%E7%A7%81%20%23kanji">JLPT N5</a></li>
     </ul>
   <p>
     Read the <a href="//jisho.org/docs">advanced search options documentation</a> for a full list of available search options.
@@ -579,6 +583,553 @@
 
 
 
+
+        <div class="kanji details">
+  <div class="row">
+    <div class="small-12 large-2 columns" data-area>
+      <div class="row">
+        <div class="large-12 columns">
+          <h1 class="character" data-area-name="print" lang="ja">私</h1>
+        </div>
+        <div class="large-12 columns">
+          <div class="kanji-details__stroke_count">
+            <strong>7</strong> strokes
+          </div>
+          
+<div class="radicals">
+    <dl class="dictionary_entry on_yomi">
+      <dt>Radical:</dt>
+      <dd>
+        <span title="KangXi radical 115.">
+            <span class="radical_meaning">
+              grain
+            </span>
+
+          禾
+        </span>
+      </dd>
+    </dl>
+</div>
+
+
+          
+<div class="radicals">
+  <dl class="dictionary_entry on_yomi">
+    <dt>Parts:</dt>
+    <dd>
+        <a href="//jisho.org/search/%E7%A6%BE%20%23kanji">禾</a>
+        <a href="//jisho.org/search/%E5%8E%B6%20%23kanji">厶</a>
+    </dd>
+  </dl>
+</div>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="small-12 large-10 columns">
+      <div class="row kanji-details--section">
+  <div class="small-12 large-7 columns kanji-details__main">
+    <div class="kanji-details__main-meanings">
+      private, I, me
+    </div>
+    <div class="kanji-details__main-readings">
+        <dl class="dictionary_entry kun_yomi">
+          <dt>Kun:</dt>
+          <dd class="kanji-details__main-readings-list" lang="ja">
+            <a href="//jisho.org/search/%E7%A7%81%20%E3%82%8F%E3%81%9F%E3%81%8F%E3%81%97">わたくし</a>&#12289; <a href="//jisho.org/search/%E7%A7%81%20%E3%82%8F%E3%81%9F%E3%81%97">わたし</a>
+          </dd>
+        </dl>
+
+        <dl class="dictionary_entry on_yomi">
+          <dt>On:</dt>
+          <dd class="kanji-details__main-readings-list" lang="ja">
+            <a href="//jisho.org/search/%E7%A7%81%20%E3%81%97">シ</a>
+          </dd>
+        </dl>
+    </div>
+  </div>
+  <div class="small-12 large-5 columns">
+    <div class="kanji_stats">
+    <div class="grade">
+      Jōyō kanji, taught in <strong>grade 6</strong>
+    </div>
+
+    <div class="jlpt">
+      JLPT level <strong>N4</strong>
+    </div>
+
+    <div class="frequency">
+      <strong>242</strong> of 2500 most used kanji in newspapers
+    </div>
+</div>
+
+  </div>
+</div>
+
+      <ul class="inline-list">
+  <li><a href="//jisho.org/search/%E7%A7%81">Words starting with 私</a></li>
+  <li><a href="//jisho.org/search/*%E7%A7%81">Words ending with 私</a></li>
+  <li><a href="//jisho.org/search/*%E7%A7%81*">Words containing 私</a></li>
+  <li><a href="#" data-dropdown="kanji_51866282d5dda7965800044e_links" data-options="is_hover:true; hover_timeout:300">External links</a></li>
+</ul>
+
+<ul id="kanji_51866282d5dda7965800044e_links" class="f-dropdown" data-dropdown-content>
+  <li><a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=私&amp;useutf8=true" class="external">Unihan database</a></li>
+  <li><a href="http://en.wiktionary.org/wiki/私" class="external">Wiktionary</a></li>
+  <li><a href="http://www.google.com/search?ie=utf8&amp;oe=utf8&amp;lr=lang_ja&amp;q=私" class="external">Google</a></li>
+  <li><a href="https://www.google.com/search?tbm=isch&q=私" class="external">Google image search</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 large-2 columns" data-area>
+      <div class="row">
+        <div class="small-12 columns">
+            <div id="kanji_strokes_51866282d5dda7965800044e" class="kanji_strokes" data-area-name="brush">
+    <button class="kanji_play_button">
+      <svg viewBox="0 0 30 30" class="icon play-circle-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#play-circle"></use>
+</svg>
+
+    </button>
+    <div class="stage">
+      <canvas width="140" height="140"></canvas>
+    </div>
+    <div class="buttons">
+      <svg viewBox="0 0 30 30" class="icon play-icon replay_button">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#play"></use>
+</svg>
+
+      <svg viewBox="0 0 30 30" class="icon settings-icon toggle_kanji_actions">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#settings"></use>
+</svg>
+
+    </div>
+    <div class="actions">
+      <div class="vertical-middle">
+        <div class="vertical-middle-inner">
+          <div class="slider">
+            <h3>Speed</h3>
+            <div class="slider speed_slider"></div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <h3>Thickness</h3>
+      <div class="slider thickness_slider"></div>
+      -->
+      <button class="ok_button tiny secondary">Done</button>
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="small-12 large-10 columns">
+      <div class="row">
+        <div class="small-12 columns">
+            <h2>Stroke order</h2>
+  <div class="stroke_order_diagram--outer_container">
+    <svg class="stroke_order_diagram--svg_container_for_51866282d5dda7965800044e" style="display: none; height: 100px"></svg>
+  </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="small-12 large-2 columns" data-area>
+    </div>
+    <div class="small-12 large-10 columns">
+      <div class="row">
+        <div class="small-12 columns">
+          
+<div class="row compounds">
+    <div class="small-12 large-6 columns">
+      <h2>On reading compounds</h2>
+      <ul class="no-bullet">
+        <li>
+  私
+  【シ】
+  private affairs, personal matter
+</li>
+<li>
+  私案
+  【シアン】
+  private plan, one&#39;s own plan
+</li>
+<li>
+  無私
+  【ムシ】
+  selflessness, unselfish
+</li>
+<li>
+  滅私
+  【メッシ】
+  selflessness, being unselfish
+</li>
+
+      </ul>
+    </div>
+    <div class="small-12 large-6 columns">
+      <h2>Kun reading compounds</h2>
+      <ul class="no-bullet">
+        <li>
+  私
+  【わたし】
+  I, me, private affairs, personal matter, secrecy, selfishness
+</li>
+<li>
+  私立
+  【しりつ】
+  private (establishment)
+</li>
+<li>
+  不肖私
+  【ふしょうわたくし】
+  me, I
+</li>
+<li>
+  私
+  【わたし】
+  I, me, private affairs, personal matter, secrecy, selfishness
+</li>
+<li>
+  私たち
+  【わたしたち】
+  we, us
+</li>
+
+      </ul>
+    </div>
+</div>
+
+            <div class="row kanji-details--section">
+    <div class="small-6 large-3 columns">
+      <h2>Readings</h2>
+<div class="kanji-details__readings row">
+<div class="small-12 columns">
+
+    <dl class="dictionary_entry pinyin">
+      <dt>Chinese:</dt>
+      <dd>si1</dd>
+    </dl>
+
+    <dl class="dictionary_entry korean">
+      <dt>Korean:</dt>
+      <dd>sa</dd>
+    </dl>
+</div>
+</div>
+
+    </div>
+
+
+    <div class="spanish_meanings small-6 large-3 columns">
+      <h2>Spanish</h2>
+      <ul class="kanji-details__meanings-list">
+            <li class="even">yo</li>
+            <li class="">privado</li>
+            <li class="even">secreto</li>
+      </ul>
+    </div>
+
+    <div class="portuguese_meanings small-6 large-3 columns">
+      <h2>Portuguese</h2>
+      <ul class="kanji-details__meanings-list">
+            <li class="even">particular</li>
+            <li class="">Eu</li>
+            <li class="even">me</li>
+      </ul>
+    </div>
+
+    <div class="french_meanings small-6 large-3 columns">
+      <h2>French</h2>
+      <ul class="kanji-details__meanings-list">
+            <li class="even">privé</li>
+            <li class="">je</li>
+            <li class="even">moi</li>
+      </ul>
+    </div>
+  </div>
+
+          <div class="extra_info">
+  <ul class="tabs" data-tab>
+    <li class="tab-title"><a href="#indices">Dictionary Indices</a></li>
+    <li class="tab-title"><a href="#classifications">Classifications</a></li>
+    <li class="tab-title"><a href="#codepoints">Codepoints</a></li>
+  </ul>
+  <div class="tabs-content">
+    <section class="content" id="indices">
+      <table summary="Dictionary indices">
+
+  <tr class="even">
+  <td class="dic_ref">
+    797
+  </td>
+  <td class="dic_name">
+    A Guide To Reading and Writing Japanese (Florence Sakade)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    887
+  </td>
+  <td class="dic_name">
+    A Guide To Reading and Writing Japanese 3rd edition (Henshall, Seeley and De Groot)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    876
+  </td>
+  <td class="dic_name">
+    A Guide To Remembering Japanese Characters (Kenneth G. Henshall)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    221
+  </td>
+  <td class="dic_name">
+    A New Dictionary of Kanji Usage
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    3265
+  </td>
+  <td class="dic_name">
+    Classic Nelson (Andrew Nelson)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    367
+  </td>
+  <td class="dic_name">
+    Essential Kanji (P.G. O’Neill)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    232
+  </td>
+  <td class="dic_name">
+    Japanese Kanji Flashcards (Max Hodges and Tomoko Okazaki)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    637
+  </td>
+  <td class="dic_name">
+    Japanese Names (P.G. O’Neill)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    2.7
+  </td>
+  <td class="dic_name">
+    Japanese for Busy People
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    125
+  </td>
+  <td class="dic_name">
+    Kanji and Kana (Spahn and Hadamitzky)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    125
+  </td>
+  <td class="dic_name">
+    Kanji and Kana, 2nd Edition (Spahn and Hadamitzky)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    72
+  </td>
+  <td class="dic_name">
+    Kanji in Context (Nishiguchi and Kono)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    1428
+  </td>
+  <td class="dic_name">
+    Kodansha Compact Kanji Guide
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    1432
+  </td>
+  <td class="dic_name">
+    Kodansha Kanji Dictionary (Jack Halpern)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    758
+  </td>
+  <td class="dic_name">
+    Kodansha Kanji Learner’s Dictionary (Jack Halpern)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    1030
+  </td>
+  <td class="dic_name">
+    Kodansha Kanji Learner’s Dictionary, 2nd Edition (Jack Halpern)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    911
+  </td>
+  <td class="dic_name">
+    Les Kanjis dans la tete (Yves Maniette)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    24913
+  </td>
+  <td class="dic_name">
+    Morohashi
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    1115
+  </td>
+  <td class="dic_name">
+    New Japanese English Character Dictionary (Jack Halpern)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    4124
+  </td>
+  <td class="dic_name">
+    New Nelson (John Haig)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    902
+  </td>
+  <td class="dic_name">
+    Remembering The Kanji (James Heisig)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    968
+  </td>
+  <td class="dic_name">
+    Remembering The Kanji, 6th edition (James Heisig)
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    17
+  </td>
+  <td class="dic_name">
+    The Kanji Way to Japanese Language Power (Dale Crowley)
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    852
+  </td>
+  <td class="dic_name">
+    Tuttle Kanji Cards (Alexander Kask)
+  </td>
+  </tr>
+</table>
+
+    </section>
+    <section class="content" id="classifications">
+      <table summary="Classifications indices">
+
+  <tr class="even">
+  <td class="dic_ref">
+    2271
+  </td>
+  <td class="dic_name">
+    <span title="Joseph De Roo">2001 Kanji</span>
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    5d2.2
+  </td>
+  <td class="dic_name">
+    <span title="Spahn and Hadamitzky">The Kanji Dictionary</span>
+  </td>
+  </tr>
+  <tr class="even">
+  <td class="dic_ref">
+    1-5-2
+  </td>
+  <td class="dic_name">
+    <span title="System of Kanji Indexing by Patterns">SKIP code</span>
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    2293.0
+  </td>
+  <td class="dic_name">
+    Four corner code
+  </td>
+  </tr>
+</table>
+
+    </section>
+    <section class="content" id="codepoints">
+      <table summary="Classifications indices">
+
+  <tr class="even">
+  <td class="dic_ref">
+    27-68
+  </td>
+  <td class="dic_name">
+    JIS X 0208-1997 kuten code
+  </td>
+  </tr>
+  <tr class="">
+  <td class="dic_ref">
+    79c1
+  </td>
+  <td class="dic_name">
+    Unicode hex code
+  </td>
+  </tr>
+</table>
+
+    </section>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
 
@@ -664,6 +1215,86 @@
     .debug { display: none; }
   </style>
 
+  <script>
+    (function() {
+
+      var url = '//d1w6u4xc3l95km.cloudfront.net/kanji-2015-03/079c1.svg';
+
+      function initAnimation(response) {
+        var k;
+        var el = $('#kanji_strokes_51866282d5dda7965800044e');
+        var result = [];
+        var doc = $(response);
+        doc.find('path[d]').each(function() {
+          var el = $(this);
+          var type = el.attr('kvg:type');
+          var paths = el.attr('d');
+          result.push(type.charCodeAt(0).toString(16) + ':' + paths);
+        });
+        el.addClass('loaded');
+        el.show();
+        k = new Kanji(result, el, {
+          brush: 'https://assets.jisho.org/assets/brushes/8-32218783e29738bb91521ff3b2697ee82ea31715b85f21a2021ff4d9af9fd9c7.png'
+        });
+        k.draw();
+
+        $('.speed_slider', el).noUiSlider({
+          handles: 1,
+          start: [Kanji.getSetting('speed')],
+          range: [Kanji.MIN_SPEED, Kanji.MAX_SPEED]
+        }).change(function() {
+          var val = parseFloat($(this).val())
+          k.setSpeed(val);
+          k.animateFromStart();
+        });
+
+        $('.thickness_slider', el).noUiSlider({
+          handles: 1,
+          start: [Kanji.getSetting('thickness')],
+          range: [Kanji.MIN_THICKNESS, Kanji.MAX_THICKNESS],
+          slide: function() {
+            var val = parseFloat($(this).val())
+            k.setThickness(val);
+          }
+        });
+
+        $('.toggle_kanji_actions', el).click(function() {
+          el.addClass('show_actions');
+        });
+
+        $('.ok_button', el).click(function() {
+          el.removeClass('show_actions');
+        });
+
+        $('.kanji_play_button', el).on('click', function() {
+          el.addClass('activated');
+          k.animateFromStart();
+        });
+
+        $('.replay_button', el).on('click', function() {
+          k.animateFromStart();
+        });
+
+      }
+
+      function initDiagram(response) {
+        var el = $('.stroke_order_diagram--svg_container_for_51866282d5dda7965800044e');
+        new strokeOrderDiagram(el.get(0), response);
+        el.show();
+      }
+
+      $.ajax({
+        type: 'GET',
+        dataType: 'xml',
+        url: url,
+        success: function(response) {
+          initAnimation(response);
+          initDiagram(response);
+        }
+      });
+
+    })();
+  </script>
 
 
     <script>
