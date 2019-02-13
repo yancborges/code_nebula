@@ -31,6 +31,10 @@ Projects i want to develop
 - [ ] Japanese text level analyser
 - [ ] Personal DataBase connection framework
 
+Other thins for learning:
+- [ ] JavaScript
+
+
 ### More info:
 Not all my projects are listed here. I have some bigger projects then these here
 that are currently being used for other people.

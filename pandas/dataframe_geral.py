@@ -152,6 +152,35 @@ drinks.beer_servings * people
 pd.concat([drinks, people], axis=1)
 # Concatenates a series to a dataframe
 
+### Loc, iloc and ix ###
+
+ufo.loc[0,:]
+ufo.loc[[1,2,3],:]
+ufo.loc[0:2,:]
+ufo.loc[:,'City']
+ufo.loc[:,['City', 'State']]
+ufo.loc[:,'City':'State']
+ufo.loc[ufo.City=='Oakland','State']
+# Selecting things by labels
+
+ufo.iloc[:,[0,3]]
+# Selecting by interget position
+
+drinks.ix['Albania',0]
+drinks.ix[1,'beer_servings']
+drinks.ix['Albania':'Andorra',0:2]
+# Mixing labels and integets
+
+# Labels are INCLUSIVE in both sides
+
+
+
+
+
+
+
+
+
 
 
 
