@@ -34,6 +34,10 @@ Projects i want to develop
 Other thins for learning:
 - [ ] JavaScript
 
+Courses i'm currently in:
+- [ ] Kaggle machine learn
+- [ ] Android developing (Fatec guaratinguetá)
+
 
 ### More info:
 Not all my projects are listed here. I have some bigger projects then these here

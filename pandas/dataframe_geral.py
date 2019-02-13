@@ -173,6 +173,30 @@ drinks.ix['Albania':'Andorra',0:2]
 
 # Labels are INCLUSIVE in both sides
 
+### Category types ###
+
+drinks['continent'] = drinks.continent.astype('category')
+# Creates categories for each value in the series
+# And then stores the values in dataframe by it's values id
+# So all values are replaced by integers (making the size lighter)
+
+df = pd.DataFrame({'ID':[100,101,102,103], 'quality':['good','very good','excellent']})
+# Creating a series of values
+
+df['quality'] = df.quality.astype('category', categories=['good','very good','excellent'], ordered=True)
+# Creating a logical order for dataframe's values
+
+df.loc[df.quality > 'good', :]
+# Getting values only greater then 'good'
+# Because now pandas undertands this kind of comparation
+
+
+
+
+
+
+
+
 
 
 
