@@ -2,10 +2,17 @@ import writter
 import kanji_scrapper
 import pandas as pd
 
-def analyse_list(kanji_df):
-	print(kanji_df.grade.value_counts())
-	print(kanji_df.jlpt.value_counts(normalize=True))
+class results:
 
+	def __init__(self,df,kanji_list):
+		self.df = df
+		self.kanji_list = kanji_list
+
+	def grade(self,normalized):
+		return list(df.grade.value_counts(normalize=normalized))
+
+	def jlpt(self,normalized):
+		return list(df.jlpt.value_counts(normalize=normalized))
 
 def analyse_text(text):
 
@@ -43,10 +50,13 @@ def analyse_text(text):
 	is_there = pd.Series(tof)
 	kanji_df = kanji_df[is_there]
 
-	analyse_list(kanji_df)
+	return results(kanji_df,kanji_list)
 
-text = '私は子供です。だから、お菓子を食べてが好き！'
-analyse_text(text)
+
+#text = '私は子供です。だから、お菓子を食べてが好き！'
+#x = analyse_text(text)
+
+#print(x.df.grade.value_counts(normalize=True))
 
 
 

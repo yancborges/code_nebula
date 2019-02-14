@@ -13,6 +13,9 @@ class kanji:
 		self.grade = grade
 		self.jlpt = jlpt
 
+	def frequency(self):
+		return self.frequency/2500
+
 	def save(self):
 		with open('kanji_dict.txt', 'a') as f:
 			f.write(toString())
@@ -41,6 +44,7 @@ def create():
 
 def load():
 	kanji_dict = pd.read_csv('kanji_dict.txt')
+	kanji_dict.set_index('name')
 	return kanji_dict
 
 def seek(kanji, kanji_dict):
@@ -48,6 +52,11 @@ def seek(kanji, kanji_dict):
 	if(kanji.name not in kanji_dict):
 		kanji.scrap()
 		return False
-	return True
+	else:
+		kanji.strokes = kanji_dict.ix[kanji.name,1]
+		kanji.frequency = kanji_dict.ix[kanji.name,2]
+		kanji.grade = kanji_dict.ix[kanji.name,3]
+		kanji.jlpt = kanji_dict.ix[kanji.name,4]
+		return True
 
 
