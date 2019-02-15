@@ -190,6 +190,31 @@ df.loc[df.quality > 'good', :]
 # Getting values only greater then 'good'
 # Because now pandas undertands this kind of comparation
 
+### Variables ###
+
+train = pd.read_csv('http://bit.ly/kaggletrain')
+
+train['Sex_male'] = train.Sex.map({'female':0,'male':1})
+# Creating a new column with 0 and 1 (booleans) based if sex is male
+
+pd.get_dummies(train.Sex, prefix='Sex').iloc[:,1:]
+# Creates one column for each possible value in dataframe as the comand above
+
+embarked = pd.get_dummies(train.Embarked, prefix='Embarked').iloc[:,1:]
+# Some from above
+
+pd.concat([train,embarked],axis=1)
+# Appending dummy variables to dataframe
+
+pd.get_dummies(train, columns=['Sex','Embarked'], drop_first=True)
+# Creates dummy variables for the gathered columns
+
+
+
+
+
+
+
 
 
 
