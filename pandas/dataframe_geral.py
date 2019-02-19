@@ -209,7 +209,25 @@ pd.concat([train,embarked],axis=1)
 pd.get_dummies(train, columns=['Sex','Embarked'], drop_first=True)
 # Creates dummy variables for the gathered columns
 
+### Dates and time ###
 
+ufo['Time'] = pd.to_dateTime(ufo.Time)
+# Change the type of argument series to datetime
+
+ufo.Time.dt.hour
+# Returns all hours stored
+
+ufo.Time.dt.weekday_name
+# Returns the NAME of day
+
+ts = pd.to_dateTime('1/1/1999')
+# Ouputs a timestamp
+
+ufo.loc[ufo.time >= ts,:]
+# Return all days after the timestamp created previously
+
+ufo.Time.max() - ufo.Time.min()
+# Returns the result of this math as an object called timeDelta
 
 
 

@@ -28,7 +28,7 @@ Things that i want to learn this year:
 - [ ] Unit tests
 
 Projects i want to develop
-- [ ] Japanese text level analyser
+- [x] [Japanese text level analyser](http://antalord.pythonanywhere.com/apps/japanese) (needs impovments, but works)
 - [ ] Personal DataBase connection framework
 
 Other thins for learning:
