@@ -250,6 +250,22 @@ users.drop_duplicates(keep='first')
 users.duplicated(subset=['age','zip_code'])
 # Considers the gathered columns as relevant for being duplicates
 
+### Display options ###
+
+pd.get_option('display.max_rows')
+# Returns the value of that option
+
+pd.set_option('display.max_rows',None)
+# Change the option value (in this case to None, that means all)
+
+pd.reset_option('display.max_rows')
+# Restores default options
+
+pd.set_option('display.max_colwidth',1000)
+# Width of columns. None isnt allowed here
+
+pd.set_option('display.precision',2)
+# At float, how many numbers after the comma will be displayed
 
 
 
