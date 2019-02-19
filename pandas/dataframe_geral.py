@@ -229,6 +229,32 @@ ufo.loc[ufo.time >= ts,:]
 ufo.Time.max() - ufo.Time.min()
 # Returns the result of this math as an object called timeDelta
 
+### Duplicates ###
+
+user_cols = ['user_id','age','gender','occupation','zip_code']
+users = pd.read_table('http://bit.ly/movieusers', sep='|', header=None, names=user_cols index_col='user_id')
+
+users.zip_code.duplicated()
+# Return a series of booleans where True means that value is duplicated
+# Only the second appear of the value is marked as a duplicate
+
+users.duplicate()
+# Tells if the whole row is duplicated somewhere
+
+users.loc[users.duplicated(keep=False),:]
+# Show only the duplicated rows
+
+users.drop_duplicates(keep='first')
+# Drops the duplicated rows
+
+users.duplicated(subset=['age','zip_code'])
+# Considers the gathered columns as relevant for being duplicates
+
+
+
+
+
+
 
 
 
