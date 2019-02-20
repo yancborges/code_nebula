@@ -267,6 +267,23 @@ pd.set_option('display.max_colwidth',1000)
 pd.set_option('display.precision',2)
 # At float, how many numbers after the comma will be displayed
 
+### DataFrame handling ###
+
+df = pd.DataFrame({'id':[100,101,102],'color':['red','blue','red']}, columns['id','color'], index=['a','b','c'])
+# Creating a dataframe from zero
+
+import numpy as np 
+arr = np.random(4,2)
+pd.DataFrame(arr,columns=['one','two'])
+# Creatng an array with random numbers with numpy
+
+pd.DataFrame({'student':np.arange(100,110,1),'test':np.random.randint(60,101,10)})
+# ^^
+
+s = pd.Series(['round','square'], index=['c','b'], name='shape')
+pd.concat([df, s], axis=1)
+# Appending the series to dataframe
+
 
 
 
