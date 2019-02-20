@@ -284,6 +284,25 @@ s = pd.Series(['round','square'], index=['c','b'], name='shape')
 pd.concat([df, s], axis=1)
 # Appending the series to dataframe
 
+### Apply, Map and ApplyMap ###
+
+train['Sex_num'] = train.Sex.map({'female':0,'male':1})
+train.loc[0:4,['Sex','Sex_num']]
+# Translates female value to 0 and male value to 1
+
+train['Name_length'] = train.Name.apply(len)
+# Applying len function to name values
+
+train['Fare_ceil'] = train.Fare.apply(np.ceil)
+# Applying numpy function for rounding values up
+
+deinks.loc[:,'beer_servings','wine_servings'].applymap(float)
+# Applyies every cell with the argument method passed
+
+
+
+
+
 
 
 
