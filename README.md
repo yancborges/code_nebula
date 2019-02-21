@@ -18,24 +18,26 @@ So i'm always trying to get better at those things.
 
 ### About python:
 Things that i want to learn this year:
-- [ ] Pandas [curretly studying]
+- [x] Pandas (21/02/19 ENDED)
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
+- [ ] Machine Learning [curretly studying]
 - [ ] Spark
 - [ ] Neural nets
 - [ ] Advanced php
+- [ ] Coding for Android
 - [ ] Unit tests
 
 Projects i want to develop
 - [x] [Japanese text level analyser](http://antalord.pythonanywhere.com/apps/japanese) (needs impovments, but works)
 - [ ] Personal DataBase connection framework
 
-Other thins for learning:
+Other things for learning:
 - [ ] JavaScript
 
 Courses i'm currently in:
-- [ ] Kaggle machine learn
+- [ ] Machine learn (Kaggle)
 - [ ] Android developing (Fatec guaratinguetá)
 
 
