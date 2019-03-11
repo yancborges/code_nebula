@@ -16,28 +16,29 @@ I like coding almost everything. But artificial intelligence, data management an
 the areas where i enjoy the most.
 So i'm always trying to get better at those things.
 
-### About python:
+### Learning:
 Things that i want to learn this year:
 - [x] Pandas (21/02/19 ENDED)
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
-- [ ] Machine Learning [curretly studying]
+- [x] Machine Learning (11/03/2019 ENDED)
 - [ ] Spark
 - [ ] Neural nets
-- [ ] Advanced php
+- [ ] Advanced php [currently studying]
 - [ ] Coding for Android
 - [ ] Unit tests
+- [ ] JavaScript
+- [ ] Angular
+- [ ] Oracle DB
 
 Projects i want to develop
 - [x] [Japanese text level analyser](http://antalord.pythonanywhere.com/apps/japanese) (needs impovments, but works)
 - [ ] Personal DataBase connection framework
-
-Other things for learning:
-- [ ] JavaScript
+- [ ] Voice recognition discord bot
 
 Courses i'm currently in:
-- [ ] Machine learn (Kaggle)
+- [x] Machine learn (Kaggle)
 - [ ] Android developing (Fatec guaratinguetá)
 
 
