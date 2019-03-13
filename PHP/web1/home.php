@@ -1,0 +1,5 @@
+<?php include 'includes/navbar.php'; ?>
+	<h1>Home</h1>
+<?php include 'includes/footer.php'; ?>
+
+		
