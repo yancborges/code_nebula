@@ -31,15 +31,20 @@ Things that i want to learn this year:
 - [ ] JavaScript
 - [ ] Angular
 - [ ] Oracle DB
+- [ ] R Lang
+- [ ] Deep learning
+- [ ] AWS Services
+- [ ] React.js
 
 Projects i want to develop
 - [x] [Japanese text level analyser](http://antalord.pythonanywhere.com/apps/japanese) (needs impovments, but works)
 - [ ] Personal DataBase connection framework
 - [ ] Voice recognition discord bot
 
-Courses i'm currently in:
+Courses i'm currently in/planning to start:
 - [x] Machine learn (Kaggle)
-- [ ] Android developing (Fatec guaratinguetá)
+- [ ] Deep Learning [Planning]
+- [ ] Android developing (Fatec guaratinguetá) [On hold]
 
 
 ### More info:
