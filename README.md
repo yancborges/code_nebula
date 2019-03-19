@@ -19,22 +19,29 @@ the areas where i enjoy the most.
 So i'm always trying to get better at those things.
 
 ### Roles that i aim at:
-+ Data scientist 
-  - [ ] Skill 1 [![Shields.io](https://img.shields.io/static/v1.svg?label=Status&message=60%&color=yellow)](https://github.com/yancborges/code_nebula/)
-  - [ ] Skill 2
-  - [ ] Skill 3
++ Data scientist [![Shields.io](https://img.shields.io/static/v1.svg?label=Status&message=60%&color=yellow)](https://github.com/yancborges/code_nebula/)
+[![Python](https://img.shields.io/static/v1.svg?label=&message=Python&color=green)](https://github.com/yancborges/code_nebula/)
+[![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
+[![Tableau](https://img.shields.io/static/v1.svg?label=&message=Tableau&color=red)](https://github.com/yancborges/code_nebula/)
+[![Hadoop](https://img.shields.io/static/v1.svg?label=&message=Hadoop&color=red)](https://github.com/yancborges/code_nebula/)
+[![Spark](https://img.shields.io/static/v1.svg?label=&message=Spark&color=red)](https://github.com/yancborges/code_nebula/)
+[![Hive](https://img.shields.io/static/v1.svg?label=&message=Hive&color=red)](https://github.com/yancborges/code_nebula/)
+[![NoSQL](https://img.shields.io/static/v1.svg?label=&message=NoSQL&color=red)](https://github.com/yancborges/code_nebula/)
+[![Scala](https://img.shields.io/static/v1.svg?label=&message=Scala&color=red)](https://github.com/yancborges/code_nebula/)
+[![Excel](https://img.shields.io/static/v1.svg?label=&message=Excel&color=red)](https://github.com/yancborges/code_nebula/)
+[![R](https://img.shields.io/static/v1.svg?label=&message=R%20Language&color=red)](https://github.com/yancborges/code_nebula/)
 + DataBase analyst
 + Machine learning developer
 + Game developer
++ Web Developer
 
-### Learning:
-Things that i want to learn this year:
+### General Learning:
+Things that i want to learn:
 - [x] Pandas [![Shields.io](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)](https://github.com/yancborges/code_nebula/tree/master/pandas)
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
 - [x] Machine Learning [![Shields.io](https://img.shields.io/badge/ENDED-11%2F03%2F2019-green.svg)](https://github.com/yancborges/code_nebula/tree/master/machine%20learning)
-- [ ] Spark
 - [ ] Neural nets
 - [ ] Advanced php [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=Studying&color=blue)](https://github.com/yancborges/code_nebula/tree/master/PHP)
 - [ ] Coding for Android
@@ -42,7 +49,6 @@ Things that i want to learn this year:
 - [ ] JavaScript
 - [ ] Angular
 - [ ] Oracle DB
-- [ ] R Lang
 - [ ] Deep learning
 - [ ] AWS Services
 - [ ] React.js
