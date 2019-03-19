@@ -1,4 +1,6 @@
 # code_nebula - Study repository
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+
 ### Where all my codes are born. Personal playground for exploring and self-teaching new technologies.
 
 ### What will i code here:
@@ -18,7 +20,7 @@ So i'm always trying to get better at those things.
 
 ### Learning:
 Things that i want to learn this year:
-- [x] Pandas (21/02/19 ENDED)
+- [x] Pandas ![uptime](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
