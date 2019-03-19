@@ -19,7 +19,7 @@ the areas where i enjoy the most.
 So i'm always trying to get better at those things.
 
 ### Roles that i aim at:
-+ Data scientist [![Shields.io](https://img.shields.io/static/v1.svg?label=Status&message=60%&color=yellow)](https://github.com/yancborges/code_nebula/)
++ Data scientist:
 [![Python](https://img.shields.io/static/v1.svg?label=&message=Python&color=green)](https://github.com/yancborges/code_nebula/)
 [![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
 [![Tableau](https://img.shields.io/static/v1.svg?label=&message=Tableau&color=red)](https://github.com/yancborges/code_nebula/)
@@ -30,13 +30,23 @@ So i'm always trying to get better at those things.
 [![Scala](https://img.shields.io/static/v1.svg?label=&message=Scala&color=red)](https://github.com/yancborges/code_nebula/)
 [![Excel](https://img.shields.io/static/v1.svg?label=&message=Excel&color=red)](https://github.com/yancborges/code_nebula/)
 [![R](https://img.shields.io/static/v1.svg?label=&message=R%20Language&color=red)](https://github.com/yancborges/code_nebula/)
-+ DataBase analyst
-+ Machine learning developer
-+ Game developer
-+ Web Developer
++ DataBase analyst:
+[![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
+[![Computer architecture](https://img.shields.io/static/v1.svg?label=&message=Computer%20architecture&color=yellowgreen)](https://github.com/yancborges/code_nebula/)
+[![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
+[![SQL Server](https://img.shields.io/static/v1.svg?label=&message=SQL%20Server&color=red)](https://github.com/yancborges/code_nebula/)
+[![PostgreeSQL](https://img.shields.io/static/v1.svg?label=&message=PostGreeSQL&color=red)](https://github.com/yancborges/code_nebula/)
+[![Oracle db](https://img.shields.io/static/v1.svg?label=&message=Oracle%20db&color=red)](https://github.com/yancborges/code_nebula/)
++ Machine learning developer:
++ Game developer:
++ Web Developer:
+
+##### Legend - Green: Known | Red: Not known | Yellow-Green: Known, but not much | Blue: Currently learning
+###### Note: This list is constantly updated as I look for a job. I may add more requisites later for each role
+###### Note: Badges will display a link to repository folder as i start to learn it
 
 ### General Learning:
-Things that i want to learn:
+Things i want to learn:
 - [x] Pandas [![Shields.io](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)](https://github.com/yancborges/code_nebula/tree/master/pandas)
 - [ ] RestFul architecture
 - [ ] Jenkins
