@@ -20,14 +20,14 @@ So i'm always trying to get better at those things.
 
 ### Learning:
 Things that i want to learn this year:
-- [x] Pandas [end date](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)
+- [x] Pandas [![Shields.io](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)](http://shields.io/)
 - [ ] RestFul architecture
 - [ ] Jenkins
 - [ ] Docker
-- [x] Machine Learning [end date](https://img.shields.io/badge/ENDED-11%2F03%2F2019-green.svg)
+- [x] Machine Learning [![Shields.io](https://img.shields.io/badge/ENDED-11%2F03%2F2019-green.svg)](http://shields.io/)
 - [ ] Spark
 - [ ] Neural nets
-- [ ] Advanced php [studying](https://img.shields.io/static/v1.svg?label=&message=Studying&color=blue)
+- [ ] Advanced php [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=Studying&color=blue)](http://shields.io/)
 - [ ] Coding for Android
 - [ ] Unit tests
 - [ ] JavaScript
