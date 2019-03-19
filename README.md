@@ -31,8 +31,8 @@ So i'm always trying to get better at those things.
 [![Scala](https://img.shields.io/static/v1.svg?label=&message=Scala&color=red)](https://github.com/yancborges/code_nebula/)
 [![Excel](https://img.shields.io/static/v1.svg?label=&message=Excel&color=red)](https://github.com/yancborges/code_nebula/)
 [![R](https://img.shields.io/static/v1.svg?label=&message=R%20Language&color=red)](https://github.com/yancborges/code_nebula/)
-[![Machine learning](https://img.shields.io/static/v1.svg?label=&message=Machine%20Learning&color=yellowgreen)](https://github.com/yancborges/code_nebula/master/tree/machine%20learning)
-+ DataBase analyst:
+[![Machine learning](https://img.shields.io/static/v1.svg?label=&message=Machine%20Learning&color=yellowgreen)](https://github.com/yancborges/code_nebula/tree/master/machine%20learning)
++ Database analyst:
 [![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
 [![Computer architecture](https://img.shields.io/static/v1.svg?label=&message=Computer%20architecture&color=yellowgreen)](https://github.com/yancborges/code_nebula/)
 [![SQL Server](https://img.shields.io/static/v1.svg?label=&message=SQL%20Server&color=red)](https://github.com/yancborges/code_nebula/)
@@ -43,9 +43,9 @@ So i'm always trying to get better at those things.
 + Web Developer:
 [![HTML](https://img.shields.io/static/v1.svg?label=&message=HTML&color=green)](https://github.com/yancborges/code_nebula/)
 [![CSS](https://img.shields.io/static/v1.svg?label=&message=CSS&color=green)](https://github.com/yancborges/code_nebula/)
-[![PHP](https://img.shields.io/static/v1.svg?label=&message=HTML&color=blue)](https://github.com/yancborges/code_nebula/master/tree/PHP)
+[![PHP](https://img.shields.io/static/v1.svg?label=&message=PHP&color=blue)](https://github.com/yancborges/code_nebula/tree/master/PHP)
 [![RestFul architecture](https://img.shields.io/static/v1.svg?label=&message=RestFul%20architecture&color=red)](https://github.com/yancborges/code_nebula/)
-[![Docker](https://img.shields.io/static/v1.svg?label=&message=Docker&color=red)](https://github.com/yancborges/code_nebula/master/tree/PHP)
+[![Docker](https://img.shields.io/static/v1.svg?label=&message=Docker&color=red)](https://github.com/yancborges/code_nebula/)
 [![Angular](https://img.shields.io/static/v1.svg?label=&message=Angular&color=red)](https://github.com/yancborges/code_nebula/)
 [![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=red)](https://github.com/yancborges/code_nebula/)
 
