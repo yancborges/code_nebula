@@ -21,6 +21,7 @@ So i'm always trying to get better at those things.
 ### Roles that i aim at:
 + Data scientist:
 [![Python](https://img.shields.io/static/v1.svg?label=&message=Python&color=green)](https://github.com/yancborges/code_nebula/)
+[![Pandas](https://img.shields.io/static/v1.svg?label=&message=Pandas&color=green)](https://github.com/yancborges/code_nebula/tree/master/pandas)
 [![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
 [![Tableau](https://img.shields.io/static/v1.svg?label=&message=Tableau&color=red)](https://github.com/yancborges/code_nebula/)
 [![Hadoop](https://img.shields.io/static/v1.svg?label=&message=Hadoop&color=red)](https://github.com/yancborges/code_nebula/)
@@ -30,38 +31,40 @@ So i'm always trying to get better at those things.
 [![Scala](https://img.shields.io/static/v1.svg?label=&message=Scala&color=red)](https://github.com/yancborges/code_nebula/)
 [![Excel](https://img.shields.io/static/v1.svg?label=&message=Excel&color=red)](https://github.com/yancborges/code_nebula/)
 [![R](https://img.shields.io/static/v1.svg?label=&message=R%20Language&color=red)](https://github.com/yancborges/code_nebula/)
+[![Machine learning](https://img.shields.io/static/v1.svg?label=&message=Machine%20Learning&color=yellowgreen)](https://github.com/yancborges/code_nebula/master/tree/machine%20learning)
 + DataBase analyst:
 [![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
 [![Computer architecture](https://img.shields.io/static/v1.svg?label=&message=Computer%20architecture&color=yellowgreen)](https://github.com/yancborges/code_nebula/)
-[![SQL](https://img.shields.io/static/v1.svg?label=&message=SQL&color=green)](https://github.com/yancborges/code_nebula/)
 [![SQL Server](https://img.shields.io/static/v1.svg?label=&message=SQL%20Server&color=red)](https://github.com/yancborges/code_nebula/)
 [![PostgreeSQL](https://img.shields.io/static/v1.svg?label=&message=PostGreeSQL&color=red)](https://github.com/yancborges/code_nebula/)
 [![Oracle db](https://img.shields.io/static/v1.svg?label=&message=Oracle%20db&color=red)](https://github.com/yancborges/code_nebula/)
-+ Machine learning developer:
-+ Game developer:
+[![Windows](https://img.shields.io/static/v1.svg?label=&message=Windows&color=yellowgreen)](https://github.com/yancborges/code_nebula/)
+[![Linux](https://img.shields.io/static/v1.svg?label=&message=Linux&color=yellowgreen)](https://github.com/yancborges/code_nebula/)
 + Web Developer:
+[![HTML](https://img.shields.io/static/v1.svg?label=&message=HTML&color=green)](https://github.com/yancborges/code_nebula/)
+[![CSS](https://img.shields.io/static/v1.svg?label=&message=CSS&color=green)](https://github.com/yancborges/code_nebula/)
+[![PHP](https://img.shields.io/static/v1.svg?label=&message=HTML&color=blue)](https://github.com/yancborges/code_nebula/master/tree/PHP)
+[![RestFul architecture](https://img.shields.io/static/v1.svg?label=&message=RestFul%20architecture&color=red)](https://github.com/yancborges/code_nebula/)
+[![Docker](https://img.shields.io/static/v1.svg?label=&message=Docker&color=red)](https://github.com/yancborges/code_nebula/master/tree/PHP)
+[![Angular](https://img.shields.io/static/v1.svg?label=&message=Angular&color=red)](https://github.com/yancborges/code_nebula/)
+[![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=red)](https://github.com/yancborges/code_nebula/)
 
 ##### Legend - Green: Known | Red: Not known | Yellow-Green: Known, but not much | Blue: Currently learning
 ###### Note: This list is constantly updated as I look for a job. I may add more requisites later for each role
-###### Note: Badges will display a link to repository folder as i start to learn it
+###### Note: Badges will display a link to repository folder as i start to learn it, some skills have lots of code in this repo, so any direct link related
 
 ### General Learning:
-Things i want to learn:
-- [x] Pandas [![Shields.io](https://img.shields.io/badge/ENDED-21%2F02%2F2019-green.svg)](https://github.com/yancborges/code_nebula/tree/master/pandas)
-- [ ] RestFul architecture
+Other things i want to learn:
 - [ ] Jenkins
-- [ ] Docker
-- [x] Machine Learning [![Shields.io](https://img.shields.io/badge/ENDED-11%2F03%2F2019-green.svg)](https://github.com/yancborges/code_nebula/tree/master/machine%20learning)
 - [ ] Neural nets
-- [ ] Advanced php [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=Studying&color=blue)](https://github.com/yancborges/code_nebula/tree/master/PHP)
 - [ ] Coding for Android
 - [ ] Unit tests
 - [ ] JavaScript
-- [ ] Angular
-- [ ] Oracle DB
 - [ ] Deep learning
 - [ ] AWS Services
 - [ ] React.js
+- [ ] Voice recognition
+- [ ] Discord bot development (with python)
 
 Projects i want to develop
 - [x] [Japanese text level analyser](http://antalord.pythonanywhere.com/apps/japanese) (needs impovments, but works)
@@ -78,4 +81,6 @@ Courses i'm currently in/planning to start:
 Not all my projects are listed here. I have some bigger projects then these here
 that are currently being used for other people.
 They can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
+
+#### Last update: 19/03/2019
 
