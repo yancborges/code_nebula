@@ -47,7 +47,7 @@ So i'm always trying to get better at those things.
 [![RestFul architecture](https://img.shields.io/static/v1.svg?label=&message=RestFul%20architecture&color=red)](https://github.com/yancborges/code_nebula/)
 [![Docker](https://img.shields.io/static/v1.svg?label=&message=Docker&color=red)](https://github.com/yancborges/code_nebula/)
 [![Angular](https://img.shields.io/static/v1.svg?label=&message=Angular&color=red)](https://github.com/yancborges/code_nebula/)
-[![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=red)](https://github.com/yancborges/code_nebula/)
+[![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=blue)](https://github.com/yancborges/code_nebula/)
 
 ##### Legend - Green: Known | Red: Not known | Yellow-Green: Known, but not much | Blue: Currently learning
 ###### Note: This list is constantly updated as I look for a job. I may add more requisites later for each role
@@ -82,5 +82,7 @@ Not all my projects are listed here. I have some bigger projects then these here
 that are currently being used for other people.
 They can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
 
-#### Last update: 19/03/2019
+#### Last updates: 19/03/2019
+- 25/03 - Setted **JavaScript** as **Learning**
+- 19/03 - Setted **PHP** as **Learning**
 
