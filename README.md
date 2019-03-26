@@ -47,7 +47,7 @@ So i'm always trying to get better at those things.
 [![RestFul architecture](https://img.shields.io/static/v1.svg?label=&message=RestFul%20architecture&color=red)](https://github.com/yancborges/code_nebula/)
 [![Docker](https://img.shields.io/static/v1.svg?label=&message=Docker&color=red)](https://github.com/yancborges/code_nebula/)
 [![Angular](https://img.shields.io/static/v1.svg?label=&message=Angular&color=red)](https://github.com/yancborges/code_nebula/)
-[![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=blue)](https://github.com/yancborges/code_nebula/)
+[![JavaScript](https://img.shields.io/static/v1.svg?label=&message=JavaScript&color=blue)](https://github.com/yancborges/code_nebula/tree/master/JS/)
 
 ##### Legend - Green: Known | Red: Not known | Yellow-Green: Known, but not much | Blue: Currently learning
 ###### Note: This list is constantly updated as I look for a job. I may add more requisites later for each role

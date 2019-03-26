@@ -27,6 +27,14 @@ var importantValue = 'magazine';
 console.log(`Hey this still is a string printing a ${importantValue}`);
 console.log(typeof importantValue);
 
+// Conditionals
+
+var yesValue = 'Yes';
+let isThisEmpty = yesValue || true;
+
+
+
+
 
 
 
