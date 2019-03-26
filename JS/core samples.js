@@ -23,6 +23,13 @@ let yourAnswer;
 yourAnswer = 'Ops, it forgot it';
 const Gravity = 'Assuming that gravity value is 10...';
 
+var importantValue = 'magazine';
+console.log(`Hey this still is a string printing a ${importantValue}`);
+console.log(typeof importantValue);
+
+
+
+
 
 
 
