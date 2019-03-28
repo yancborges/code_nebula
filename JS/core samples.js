@@ -32,6 +32,36 @@ console.log(typeof importantValue);
 var yesValue = 'Yes';
 let isThisEmpty = yesValue || true;
 
+// functions
+
+function isItDefault(defaultValue = 'default') {
+	if(defaultValue === 'default') {
+		return true;
+	}
+	return false;
+}
+
+
+const pizzaFlavor = function(flavor) {
+// OR: const pizzaFlavor = (flavor) => {
+	if(flavor === 'cheese') {
+		return 'cheese only';
+	}
+	else if(flavor === 'bacon') {
+		return 'bacon, cheese, and creamcheese';
+	}
+};
+
+console.log(pizzaFlavor('bacon'));
+
+const dolarPrice = value => value * 4.10;
+
+
+
+
+
+
+
 
 
 
