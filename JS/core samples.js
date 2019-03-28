@@ -56,6 +56,22 @@ console.log(pizzaFlavor('bacon'));
 
 const dolarPrice = value => value * 4.10;
 
+// Scope
+
+// ~Nothing here
+
+// Arrays
+
+const eatableFood = ['cheese','fish','sushi','any japanese dish','bacon'];
+console.log(eatableFood.length);
+eatableFood.push('Fries'); // appeding element
+eatableFood.pop(); // Removing the last one
+eatableFood.shift(): // Removes the first one
+eatableFood.unshift('Pasta'); // Adds a new element at first position
+eatableFood.slice(1,4);
+var whereIsMyFishAt = eatableFood.indexOf('fish');
+
+
 
 
 
