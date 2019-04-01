@@ -97,6 +97,29 @@ do {
 } while(count < 5);
 
 
+// Functions as data
+
+const x = value => {
+	if( value < 10 ) {
+		return 'Hey, its greater then 10, Nice!';
+	}
+	else {
+		return 'Silence.';
+	}
+}
+
+var hey = x;
+console.log(hey());
+console.log(hey.name);
+
+// Functions as parameter
+
+
+const MetersToCentimeters = value => value*100;
+
+const taggedValue = (func, value) => value + ' cm';
+
+taggedValue(MetersToCentimeters, 59,30);
 
 
 
