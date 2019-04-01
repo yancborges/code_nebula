@@ -77,6 +77,7 @@ Courses i'm currently in/planning to start:
 - [ ] R Language [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=Planning&color=ff69b4)](https://github.com/yancborges/code_nebula/)
 - [ ] Deep Learning [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=Planning&color=ff69b4)](https://github.com/yancborges/code_nebula/)
 - [ ] Android developing (Fatec guaratinguetá) [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=On%20hold&color=orange)](https://github.com/yancborges/code_nebula/)
+- [ ] UX (Udemy) [![Shields.io](https://img.shields.io/static/v1.svg?label=&message=On%20hold&color=orange)](https://github.com/yancborges/code_nebula/)
 
 ### More info:
 Not all my projects are listed here. I have some bigger projects then these here
