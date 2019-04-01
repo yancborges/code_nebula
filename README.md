@@ -83,7 +83,7 @@ Not all my projects are listed here. I have some bigger projects then these here
 that are currently being used for other people.
 They can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
 
-#### Last updates: 19/03/2019
+#### Last update: 25/03/2019
 - 25/03 - Setted **JavaScript** as **Learning**
 - 19/03 - Setted **PHP** as **Learning**
 

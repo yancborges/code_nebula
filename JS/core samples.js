@@ -72,6 +72,38 @@ eatableFood.slice(1,4);
 var whereIsMyFishAt = eatableFood.indexOf('fish');
 
 
+// Loops
+
+//// for
+
+for( var counter = 0; counter < 10; counter++ ) {
+	console.log(counter);
+}
+
+//// while
+
+var count = 0;
+while( count < 5 ) {
+	console.log(count);
+	count++;
+}
+
+//// Do while
+
+var count = 0;
+do {
+	console.log(count);
+	count++;
+} while(count < 5);
+
+
+
+
+
+
+
+
+
 
 
 
