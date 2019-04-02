@@ -85,6 +85,7 @@ that are currently being used for other people.
 They can be seen at my [Online portifolio](http://antalord.pythonanywhere.com/work).
 
 #### Last update: 25/03/2019
+- 02/04 - Added udemy **UX** course to the list
 - 25/03 - Setted **JavaScript** as **Learning**
 - 19/03 - Setted **PHP** as **Learning**
 
