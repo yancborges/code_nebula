@@ -17,3 +17,24 @@ sns.pairplot(data, x_vars=['Landsize','Rooms'], y_vars=['Price'], height=7, aspe
 
 plt.show()
 
+
+### Linear regression
+
+from sklearn.cross_validation import train_test_split
+#change this line after, new syntax
+from sklearn.linear_model import LinearRegression
+
+X_train, X_test, y_train, y_test = train_test_split(X,y, random_state=1)
+
+linreg = LinearRegression()
+linreg.fit(x_train,y_train)
+
+## Predicting with RMSE
+
+import numpy as np 
+
+y_pred = linreg.predict(X_test)
+print(np.sqrt(metrics.mean_squared.error(y_test,y_pred)))
+
+
+
