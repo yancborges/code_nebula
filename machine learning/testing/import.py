@@ -1,9 +1,55 @@
+### Importing libs #######################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
 import urllib.request
 import json
 import pandas as pd
 import re
 from urllib.parse import quote_from_bytes
 import pickle
+
+import imp
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeRegressor
+
+### Constants & global variables ##########################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+MAX_GENRES = 43
+
+### Other functions #######################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+def binary_string_gen(non_binary):
+		binary_array = []
+		for i in range(1,MAX_GENRES):
+			if(str(i) in non_binary):
+				binary_array.append(1)
+			else:
+				binary_array.append(0)
+		return binary_array
+
+def toFloat(matrix):
+	new_matrix = []
+	for array in matrix:
+		new_array = []
+		for item in array:
+			if(str(item) in '01'):
+				new_array.append(float(item))
+		new_matrix.append(new_array)
+	return new_matrix
+
+
+
+### Classes, data scrapping, object instantiation & file management #######################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
 
 class a_list:
 
@@ -69,8 +115,16 @@ class a_list:
 			return pd.read_csv(string, sep="=@", engine='python')
 
 	def create_dataSet(self):
-		print(self.clean_list)
-
+		try:
+			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
+		except:
+			with open(self.nick + '_ds.csv', 'w') as f:
+				f.write('Title=@Genres_id=@Score \n')
+			with open(self.nick + '_ds.csv', 'a', encoding='utf8') as f:
+				for item in self.clean_list:
+					if(item.status == 2):
+						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.score))
+			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
 
 class item:
 
@@ -95,7 +149,7 @@ class item:
 			'Id':self.id,
 			'Status':self.status,
 			'url':self.url,
-			'genres':self.genres
+			'genres':str(self.genres)
 		}
 
 	def get_genres(self):
@@ -106,10 +160,78 @@ class item:
 		except:
 			resp = urllib.request.urlopen('https://myanimelist.net' + quote_from_bytes(self.url.encode('utf-8'))).read().decode("utf-8")
 		gen_block = resp.split('<span class="dark_text">Genres:</span>')[1].split('</div>')[0].replace('<a href="/anime/genre/', '')
-		return re.findall(r'\d{1,9}', gen_block)
+		return list(re.findall(r'\d{1,9}', gen_block))
 
 
+
+### Analysis section ######################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+class analysis:
+
+	def __init__(self, nick, data):
+		self.nick = nick
+		self.data = data
+
+	def train_test(self, nick):
+		
+		X = toFloat(list(self.data.Genres_id))
+		print(type(X))
+		y = self.data.Score
+
+		print(X[0])
+
+		X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
+
+		### Choosing algorithm
+
+		algorithms = {
+			'LogisticRegression':LogisticRegression(),
+			'Knn':KNeighborsClassifier(n_neighbors=5),
+			'DecisionTreeRegressor':DecisionTreeRegressor()
+		}
+
+		results = {}
+
+		for alg in algorithms:
+			clf = algorithms[alg]
+			clf.fit(X_train,y_train)
+			score = clf.score(X_test,y_test)
+			results[alg] = score
+
+		winner = max(results, key=results.get)
+		print(results)
+		print('Max accuracy: ' + str(results[winner] * 100) + '%')
+		w_obj = algorithms[winner]
+
+		with open(self.nick + '_trained.pkl', 'wb') as f:
+			pickle.dump(w_obj, f)
+
+	def predict(self, new_data):
+
+		algorithm = None
+		new_data = [binary_string_gen(new_data)]
+
+		try:
+			with open(self.nick + '_trained.pkl', 'rb') as f:
+				algorithm = pickle.load(f)
+		except:
+			self.train_test(self.nick)
+			with open(self.nick + '_trained.pkl', 'rb') as f:
+				algorithm = pickle.load(f)
+			self.predict(new_data)
+
+		return algorithm.predict(new_data)
+
+
+### Running section #######################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+#nick = 'ThousandAntas'
 nick = 'ThousandAntas'
+new_data = [[8,19,22,23,27]]
 
 try:
 	with open('object_list_from_' + nick + '.pkl', 'rb') as f:
@@ -119,6 +241,11 @@ except Exception as e:
 	print(e)
 	my_list = a_list(nick)
 	
+data = my_list.create_dataSet()
 
-my_list.create_dataSet()
+test = analysis(nick,data)
+print(test.predict(new_data))
+
+
+
 
