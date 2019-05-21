@@ -104,7 +104,7 @@ class a_list:
 			f.write('Title=@Score=@Status=@Id=@url\n')
 		with open(string,'a', encoding='utf8') as f:
 			for item in self.clean_list:
-				f.write('%s=@%s=@%s=@%s=@%s=@%s \n' %(item.title,item.score,item.status,item.id,item.url,item.genres))
+				f.write('%s=@%s=@%s=@%s=@%s=@%s \n' %(item.title,item.status,item.score,item.id,item.url,item.genres))
 
 	def readPandas(self):
 		try:
@@ -123,7 +123,8 @@ class a_list:
 			with open(self.nick + '_ds.csv', 'a', encoding='utf8') as f:
 				for item in self.clean_list:
 					if(item.status == 2):
-						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.score))
+						print(self.pd_series.Score)
+						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.isLikeable(self.pd_series.Score.mean(),item.score)))
 			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
 
 class item:
@@ -161,6 +162,11 @@ class item:
 			resp = urllib.request.urlopen('https://myanimelist.net' + quote_from_bytes(self.url.encode('utf-8'))).read().decode("utf-8")
 		gen_block = resp.split('<span class="dark_text">Genres:</span>')[1].split('</div>')[0].replace('<a href="/anime/genre/', '')
 		return list(re.findall(r'\d{1,9}', gen_block))
+
+	def isLikeable(self, mean, score):
+		if( score < mean ):
+			return 1
+		return 0
 
 
 
