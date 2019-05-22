@@ -101,10 +101,10 @@ class a_list:
 	def toPandas(self):
 		string = self.nick + '_data.csv'
 		with open(string,'w') as f:
-			f.write('Title=@Score=@Status=@Id=@url\n')
+			f.write('Title=@Score=@Status=@url=@Genre_Id\n')
 		with open(string,'a', encoding='utf8') as f:
 			for item in self.clean_list:
-				f.write('%s=@%s=@%s=@%s=@%s=@%s \n' %(item.title,item.status,item.score,item.id,item.url,item.genres))
+				f.write('%s=@%s=@%s=@%s=@%s \n' %(item.title,item.score,item.status,item.url,item.genres))
 
 	def readPandas(self):
 		try:
@@ -118,13 +118,13 @@ class a_list:
 		try:
 			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
 		except:
+			print(self.pd_series[self.pd_series.Status == 2].Score.mean())
 			with open(self.nick + '_ds.csv', 'w') as f:
 				f.write('Title=@Genres_id=@Score \n')
 			with open(self.nick + '_ds.csv', 'a', encoding='utf8') as f:
 				for item in self.clean_list:
 					if(item.status == 2):
-						print(self.pd_series.Score)
-						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.isLikeable(self.pd_series.Score.mean(),item.score)))
+						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.isLikeable(self.pd_series[self.pd_series.Status == 2].Score.mean())))
 			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
 
 class item:
@@ -163,8 +163,8 @@ class item:
 		gen_block = resp.split('<span class="dark_text">Genres:</span>')[1].split('</div>')[0].replace('<a href="/anime/genre/', '')
 		return list(re.findall(r'\d{1,9}', gen_block))
 
-	def isLikeable(self, mean, score):
-		if( score < mean ):
+	def isLikeable(self, mean):
+		if( self.score > mean ):
 			return 1
 		return 0
 
@@ -228,7 +228,7 @@ class analysis:
 				algorithm = pickle.load(f)
 			self.predict(new_data)
 
-		return algorithm.predict(new_data)
+		return algorithm.predict_proba(new_data)
 
 
 ### Running section #######################################################################################################################################
@@ -237,7 +237,7 @@ class analysis:
 
 #nick = 'ThousandAntas'
 nick = 'ThousandAntas'
-new_data = [[8,19,22,23,27]]
+new_data = [[1,2,10,11,16,37]]
 
 try:
 	with open('object_list_from_' + nick + '.pkl', 'rb') as f:
