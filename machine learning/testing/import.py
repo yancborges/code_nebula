@@ -15,6 +15,7 @@ from sklearn import metrics
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import cross_val_score
 
 ### Constants & global variables ##########################################################################################################################
 ###########################################################################################################################################################
@@ -29,7 +30,7 @@ MAX_GENRES = 43
 def binary_string_gen(non_binary):
 		binary_array = []
 		for i in range(1,MAX_GENRES):
-			if(str(i) in non_binary):
+			if(i in non_binary):
 				binary_array.append(1)
 			else:
 				binary_array.append(0)
@@ -183,15 +184,13 @@ class analysis:
 	def train_test(self, nick):
 		
 		X = toFloat(list(self.data.Genres_id))
-		print(type(X))
 		y = self.data.Score
 
-		print(X[0])
-
-		X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
+		#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
 		### Choosing algorithm
 
+		'''
 		algorithms = {
 			'LogisticRegression':LogisticRegression(),
 			'Knn':KNeighborsClassifier(n_neighbors=5),
@@ -210,34 +209,47 @@ class analysis:
 		print(results)
 		print('Max accuracy: ' + str(results[winner] * 100) + '%')
 		w_obj = algorithms[winner]
+		'''
+		w_obj = LogisticRegression()
+		w_obj.fit(X, y)
+		
+		print('Score:', cross_val_score(w_obj, X, y, cv=5, scoring='accuracy').mean())
+
+		#y_pred = w_obj.predict(X_test)
+		#print('Precision score:', metrics.precision_score(y_test, y_pred))
 
 		with open(self.nick + '_trained.pkl', 'wb') as f:
 			pickle.dump(w_obj, f)
+		return w_obj
 
 	def predict(self, new_data):
 
 		algorithm = None
-		new_data = [binary_string_gen(new_data)]
+		resp_arr = []
 
 		try:
 			with open(self.nick + '_trained.pkl', 'rb') as f:
 				algorithm = pickle.load(f)
-		except:
-			self.train_test(self.nick)
-			with open(self.nick + '_trained.pkl', 'rb') as f:
-				algorithm = pickle.load(f)
-			self.predict(new_data)
 
-		return algorithm.predict_proba(new_data)
+		except:
+			algorithm = self.train_test(self.nick)
+			
+
+		for item in new_data:
+
+			item_x = [binary_string_gen(item)]
+			resp_arr.append(algorithm.predict_proba(item_x)[:,1][0])
+
+		return resp_arr
 
 
 ### Running section #######################################################################################################################################
 ###########################################################################################################################################################
 ###########################################################################################################################################################
 
-#nick = 'ThousandAntas'
 nick = 'ThousandAntas'
-new_data = [[1,2,10,11,16,37]]
+new_data = [[1,2,10,11,16,37],[1,14,40,37,8,22,42],[24,19,8,22],[1,24,31,8,22,18],[4,37,22,32,10,23,27],[4,40,22,23,42],[22,42],[35,4,31,22,9,17,23],[1,36,4,37],[24,8,22],[1,24,18]]
+
 
 try:
 	with open('object_list_from_' + nick + '.pkl', 'rb') as f:
@@ -250,7 +262,9 @@ except Exception as e:
 data = my_list.create_dataSet()
 
 test = analysis(nick,data)
-print(test.predict(new_data))
+
+for item in test.predict(new_data):
+	print('Anime relevancy:','%.2f' %(float(item)*100), '%' )
 
 
 
