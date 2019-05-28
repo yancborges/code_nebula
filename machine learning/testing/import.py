@@ -27,10 +27,14 @@ MAX_GENRES = 43
 ###########################################################################################################################################################
 ###########################################################################################################################################################
 
-def binary_string_gen(non_binary):
+def binary_string_gen(non_binary, new):
 		binary_array = []
 		for i in range(1,MAX_GENRES):
-			if(i in non_binary):
+			if(new == True):
+				x = i
+			else:
+				x = str(i)
+			if(x in non_binary):
 				binary_array.append(1)
 			else:
 				binary_array.append(0)
@@ -85,7 +89,7 @@ class a_list:
 			with open(string,'r') as f:
 				return self.readJson(string)
 		except:
-			url = ("http://myanimelist.net/animelist/" + nick)
+			url = ("http://myanimelist.net/animelist/" + nick + '?status=7')
 			resp = urllib.request.urlopen(url).read().decode("utf-8")
 			raw_list = resp.split('data-items="')[1].split('">')[0].replace('&quot;','"')
 			
@@ -125,7 +129,7 @@ class a_list:
 			with open(self.nick + '_ds.csv', 'a', encoding='utf8') as f:
 				for item in self.clean_list:
 					if(item.status == 2):
-						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres)),item.isLikeable(self.pd_series[self.pd_series.Status == 2].Score.mean())))
+						f.write('%s=@%s=@%s \n' %(item.title,str(binary_string_gen(item.genres,False)),item.isLikeable(self.pd_series[self.pd_series.Status == 2].Score.mean())))
 			return pd.read_csv(self.nick + '_ds.csv', sep='=@', engine='python')
 
 class item:
@@ -237,7 +241,7 @@ class analysis:
 
 		for item in new_data:
 
-			item_x = [binary_string_gen(item)]
+			item_x = [binary_string_gen(item,True)]
 			resp_arr.append(algorithm.predict_proba(item_x)[:,1][0])
 
 		return resp_arr
@@ -247,7 +251,7 @@ class analysis:
 ###########################################################################################################################################################
 ###########################################################################################################################################################
 
-nick = 'ThousandAntas'
+nick = 'Xinil'
 new_data = [[1,2,10,11,16,37],[1,14,40,37,8,22,42],[24,19,8,22],[1,24,31,8,22,18],[4,37,22,32,10,23,27],[4,40,22,23,42],[22,42],[35,4,31,22,9,17,23],[1,36,4,37],[24,8,22],[1,24,18]]
 
 
