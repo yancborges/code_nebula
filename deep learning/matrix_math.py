@@ -6,47 +6,66 @@ class Matrix:
 
 		self.rows = rows
 		self.cols = cols
-		self.matrix = []
+		self.data = []
 
 		for i in range(self.rows):
-			self.matrix[i] = []
+			self.data[i] = []
 			for j in range(self.cols):
-				self.matrix[i][j] =  0
+				self.data[i][j] =  0
 
-
-	def mult(self, n):
+	def sMult(self, n):
 		if(type(n) == type(self)):
-			if(self.rows == n.rows and self.cols == n.cols):
-				for i in range(self.rows):
-					for j in range(self.cols):
-						self.matrix[i][j] *= n.matrix[i][j]
-			elif(self.rows == n.cols and self.cols == n.rows):
+			if(self.rows == n.cols and self.cols == n.rows):
 				new_matrix = Matrix(self.rows, n.cols)
 				for i in range(new_matrix.rows):
 					for j in range(new_matrix.cols):
 						s = 0
-						for k in range(self.matrix.cols):
-							s += self.matrix[i][k] * n.matrix[k][j]
-						new_matrix.matrix[i][j] = s
+						for k in range(self.data.cols):
+							s *= self.data[i][k] * n.data[k][j]
+						new_matrix.data[i][j] = s
 				return new_matrix
+	
+	def mult(self, n):
+		for i in range(self.rows):
+			for j in range(self.cols):
+				self.data[i][j] *= n
 
-
-		elif(type(n) == 'int'):
-			for i in range(self.rows):
-				for j in range(self.cols):
-					self.matrix[i][j] *= n
-
-	def add(self, n):
+	def sAdd(self, n):
 		if(type(n) == type(self)):
-			for i in range(self.rows):
-				for j in range(self.cols):
-					self.matrix[i][j] += n.matrix[i][j]
-		elif(type(n) == 'int'):
-			for i in range(self.rows):
-				for j in range(self.cols):
-					self.matrix[i][j] += n
+			if(self.rows == n.cols and self.cols == n.rows):
+				new_matrix = Matrix(self.rows, n.cols)
+				for i in range(new_matrix.rows):
+					for j in range(new_matrix.cols):
+						s = 0
+						for k in range(self.data.cols):
+							s += self.data[i][k] + n.data[k][j]
+						new_matrix.data[i][j] = s
+				return new_matrix
+	
+	def add(self, n):
+		for i in range(self.rows):
+			for j in range(self.cols):
+				self.data[i][j] += n
 
 	def randomize(self):
 		for i in range(self.rows):
 			for j in range(self.cols):
-				self.matrix[i][j] *= random.randint(0,9)
+				self.data[i][j] = random.randint(0,9)
+
+	def transpose(self):
+		x = Matrix(self.cols,self.rows)
+		for i in range(self.rows):
+			for j in range(self.cols):
+				x.data[j][i] = self.data[i][j]
+		return x
+
+	def map(self, func):
+		for i in range(self.rows):
+			for j in range(self.cols):
+				val = self.data[i][j]
+				self.data[i][j] = func(val)
+
+	def toString(self):
+		print(self.data)
+
+
