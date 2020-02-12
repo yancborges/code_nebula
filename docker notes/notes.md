@@ -41,6 +41,9 @@ docker container exec <params> <name> <option>
 - Removing all containers
 docker rm $(docker ps -aq) -f
 
+- Running a command on container
+docker container run <params> <port> -v $(<command>):<command params> <image>
+
 ### Ports:
 default ignx: 8080
 httpd: 8081
